@@ -8924,13 +8924,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mario
       objectReference: {fileID: 0}
-    - target: {fileID: 2112104101375954364, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8971,8 +8967,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1927495395168411946, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4513569062903644674}
   m_SourcePrefab: {fileID: 100100000, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
+--- !u!1 &4513569062903644673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1927495395168411946, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
+  m_PrefabInstance: {fileID: 4513569062903644672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4513569062903644674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513569062903644673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d6e82f452248584fa0297fe6c0c1642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 8
+  maxJumpHeight: 5
+  maxJumpTime: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
