@@ -93,4 +93,11 @@ public class PlayerMovement : MonoBehaviour
             if (transform.DotTest(collision.transform, Vector2.up))
                 velocity.y = 0f;
     }
+
+    public void RespawnAt(Vector2 position)
+    {
+        velocity = Vector2.zero;
+        rigidbody.position = position;
+        rigidbody.linearVelocity = Vector2.zero;
+    }
 }
