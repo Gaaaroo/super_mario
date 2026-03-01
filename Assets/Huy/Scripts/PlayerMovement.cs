@@ -89,7 +89,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+            if (transform.DotTest(collision.transform, Vector2.down))
+            {
+                // Bounce the player up when they jump on an enemy
+                velocity.y = jumpForce / 2f;
+                jumping = true;
+            }
+        else if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
             if (transform.DotTest(collision.transform, Vector2.up))
                 velocity.y = 0f;
     }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7597796773551734052}
   - component: {fileID: 4749464734093287826}
   - component: {fileID: 2234248941813610070}
+  - component: {fileID: 5857423248162516757}
   m_Layer: 7
   m_Name: Goomba
   m_TagString: Untagged
@@ -188,3 +189,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EntityMovement
   Speed: 2
   Direction: {x: -1, y: 0}
+--- !u!114 &5857423248162516757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572748388624177754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c7ab331ac9f5347b3482b6ee1fdbd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Goomba
+  FlatSprite: {fileID: 21300000, guid: dceda839fbcc74441aef5f93f32bdc1a, type: 3}
