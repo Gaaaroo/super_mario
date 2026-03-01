@@ -12,8 +12,14 @@ public class Goomba : MonoBehaviour
     {
         // Check if the collision is with the player and if the player is above the goomba
         if (collision.gameObject.CompareTag("Player"))
+        {
+            Player player = collision.gameObject.GetComponent<Player>();
+
             if (collision.transform.DotTest(transform, Vector2.down))
                 Flatten();
+            else
+                player.Hit();
+        }
     }
 
     private void Flatten()
