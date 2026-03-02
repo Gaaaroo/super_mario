@@ -74,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = jumpForce;
             jumping = true;
             jumpBufferTimer = 0f;
+            coyoteTimer = 0f;
         }
 
         // Ngang: áp dụng input ngay
@@ -133,6 +134,8 @@ public class PlayerMovement : MonoBehaviour
     public void RespawnAt(Vector2 position)
     {
         velocity = Vector2.zero;
+        jumpBufferTimer = 0f;
+        coyoteTimer = 0f;
         rigidbody.position = position;
         rigidbody.linearVelocity = Vector2.zero;
     }

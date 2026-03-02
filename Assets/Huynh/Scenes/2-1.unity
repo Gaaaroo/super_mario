@@ -1943,7 +1943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e478f982812bcba41afa67331f5dae42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeTrap
-  spike: {fileID: 0}
+  spike: {fileID: 222976433}
   hideDistance: 16
   riseTime: 2
   spawnPoint: {fileID: 0}
