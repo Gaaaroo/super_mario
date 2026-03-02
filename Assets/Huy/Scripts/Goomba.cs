@@ -1,9 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
-[RequireComponent(typeof(AnimatedSprite))]
-[RequireComponent(typeof(EntityMovement))]
-[RequireComponent(typeof(SpriteRenderer))]
 public class Goomba : MonoBehaviour
 {
     public Sprite FlatSprite;
@@ -20,6 +16,19 @@ public class Goomba : MonoBehaviour
             else
                 player.Hit();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Shell"))
+            Hit();
+    }
+
+    private void Hit()
+    {
+        GetComponent<AnimatedSprite>().enabled = false;
+        GetComponent<DeathAnimation>().enabled = true;
+        Destroy(gameObject, 3f);
     }
 
     private void Flatten()
