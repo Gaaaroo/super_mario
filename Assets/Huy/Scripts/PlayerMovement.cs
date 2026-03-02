@@ -34,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         camera = Camera.main;
+
+        // Đặt vị trí spawn theo checkpoint (nếu có), nếu không thì giữ vị trí ban đầu trong scene
+        Vector2 spawnPosition = CheckpointManager.GetSpawnPosition(rigidbody.position);
+        rigidbody.position = spawnPosition;
+        transform.position = spawnPosition;
     }
 
     private void Update()
@@ -120,14 +125,12 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public Transform respawnWhenHitByEnemy;
-
     private void HitByEnemy()
     {
-        if (respawnWhenHitByEnemy != null)
-            RespawnAt(respawnWhenHitByEnemy.position);
-        else
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        // Chết bởi enemy: reload scene, Player sẽ spawn lại ở checkpoint (nếu có)
+        UnityEngine.SceneManagement.SceneManager.LoadScene(
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
+        );
     }
 
     public void RespawnAt(Vector2 position)
