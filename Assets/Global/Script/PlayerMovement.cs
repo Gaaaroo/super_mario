@@ -240,6 +240,27 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
+        // Kiểm tra nếu đụng trúng con Rùa (Koopa)
+        Koopa koopa = collision.gameObject.GetComponent<Koopa>();
+
+        if (koopa != null)
+        {
+            // Kiểm tra hướng va chạm bằng "Normal"
+            // Nếu normal.y > 0.5 nghĩa là Mario đang nằm TRÊN đầu con rùa
+            if (collision.contacts[0].normal.y > 0.5f)
+            {
+                koopa.Stomp(); // Gọi hàm giẫm bẹp (thành cái mai)
+                               // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
+                GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 10f);
+            }
+            else
+            {
+                // Nếu đụng từ bên hông (normal.y thấp) -> Mario mới chết
+                Debug.Log("Mario chết!");
+                // Gọi hàm xử lý Mario chết ở đây
+            }
+        }
+
         if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
             if (transform.DotTest(collision.transform, Vector2.up))
                 velocity.y = 0f;

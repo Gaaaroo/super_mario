@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class Extentions
 {
-    private static LayerMask layerMask = LayerMask.GetMask("Default");
+    private static LayerMask layerMask = LayerMask.GetMask("Default", "Map");
 
     // Catching grounded or jumping
     public static bool Raycast(this Rigidbody2D rigidbody, Vector2 direction)
