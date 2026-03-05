@@ -249,15 +249,28 @@ public class PlayerMovement : MonoBehaviour
             // Nếu normal.y > 0.5 nghĩa là Mario đang nằm TRÊN đầu con rùa
             if (collision.contacts[0].normal.y > 0.5f)
             {
-                koopa.Stomp(); // Gọi hàm giẫm bẹp (thành cái mai)
-                               // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
-                GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 10f);
+                koopa.Stomp(transform); // Gọi hàm giẫm bẹp (thành cái mai)
+                                        // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
+                                        //GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 10f);
+                GetComponent<Rigidbody2D>().linearVelocity = new Vector2(rigidbody.linearVelocity.x, 10f);
+
             }
             else
             {
-                // Nếu đụng từ bên hông (normal.y thấp) -> Mario mới chết
-                Debug.Log("Mario chết!");
-                // Gọi hàm xử lý Mario chết ở đây
+                // 2. Nếu đụng từ bên hông
+                // KIỂM TRA: Nếu nó đã là cái mai VÀ nó đang ĐỨNG YÊN
+                if (koopa.IsShell && !koopa.IsPushed)
+                {
+                    // Mario không chết! 
+                    // Lúc này hàm OnCollisionEnter2D bên script Koopa sẽ lo việc đá cái mai đi.
+                    Debug.Log("Mario đang đá cái mai, không chết.");
+                }
+                else
+                {
+                    // Nếu nó đang đi bộ HOẶC cái mai đang bay vèo vèo -> Mario mới chết
+                    Debug.Log("Mario đụng quái và chết!");
+                    HitByEnemy();
+                }
             }
         }
 
