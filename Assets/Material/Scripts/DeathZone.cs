@@ -23,7 +23,7 @@ public class DeathZone : MonoBehaviour
         PlayerMovement movement = player.GetComponent<PlayerMovement>();
         if (movement != null)
         {
-            movement.RespawnAt(spawnPoint.position);
+            //movement.RespawnAt(spawnPoint.position);
             return;
         }
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();

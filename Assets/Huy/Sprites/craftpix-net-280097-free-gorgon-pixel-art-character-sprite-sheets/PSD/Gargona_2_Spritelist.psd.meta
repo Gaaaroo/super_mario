@@ -1,0 +1,2171 @@
+fileFormatVersion: 2
+guid: 484121081898d754eb08e95416639b92
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6757875363853999332
+    second: Gargona_2_Spritelist_0
+  - first:
+      213: 3765279846329203625
+    second: Gargona_2_Spritelist_1
+  - first:
+      213: -6744123146471485403
+    second: Gargona_2_Spritelist_2
+  - first:
+      213: -3270834329386654019
+    second: Gargona_2_Spritelist_3
+  - first:
+      213: -3283378727436398846
+    second: Gargona_2_Spritelist_4
+  - first:
+      213: 5526087608611952383
+    second: Gargona_2_Spritelist_5
+  - first:
+      213: -7337029829461776747
+    second: Gargona_2_Spritelist_6
+  - first:
+      213: -4756682445530488637
+    second: Gargona_2_Spritelist_7
+  - first:
+      213: -651065393211234401
+    second: Gargona_2_Spritelist_8
+  - first:
+      213: 1979856546516758581
+    second: Gargona_2_Spritelist_9
+  - first:
+      213: -6480883995608524671
+    second: Gargona_2_Spritelist_10
+  - first:
+      213: 7633468736953716209
+    second: Gargona_2_Spritelist_11
+  - first:
+      213: 5160892241650354963
+    second: Gargona_2_Spritelist_12
+  - first:
+      213: 434060255247472857
+    second: Gargona_2_Spritelist_13
+  - first:
+      213: 2812697997017790180
+    second: Gargona_2_Spritelist_14
+  - first:
+      213: -1734779761924237493
+    second: Gargona_2_Spritelist_15
+  - first:
+      213: -2629219416713486982
+    second: Gargona_2_Spritelist_16
+  - first:
+      213: -611875177917765922
+    second: Gargona_2_Spritelist_17
+  - first:
+      213: -1182415259997696540
+    second: Gargona_2_Spritelist_18
+  - first:
+      213: -3068958615773836992
+    second: Gargona_2_Spritelist_19
+  - first:
+      213: 6685621904788359494
+    second: Gargona_2_Spritelist_20
+  - first:
+      213: 5058703226688496109
+    second: Gargona_2_Spritelist_21
+  - first:
+      213: -7392307199030869226
+    second: Gargona_2_Spritelist_22
+  - first:
+      213: 1848303293063736957
+    second: Gargona_2_Spritelist_23
+  - first:
+      213: -5896702349450129630
+    second: Gargona_2_Spritelist_24
+  - first:
+      213: -5787134186985066005
+    second: Gargona_2_Spritelist_25
+  - first:
+      213: -3841295088827800814
+    second: Gargona_2_Spritelist_26
+  - first:
+      213: -6869998834639133856
+    second: Gargona_2_Spritelist_27
+  - first:
+      213: 1720993796047917454
+    second: Gargona_2_Spritelist_28
+  - first:
+      213: -6394483786209017399
+    second: Gargona_2_Spritelist_29
+  - first:
+      213: 2878951875616761616
+    second: Gargona_2_Spritelist_30
+  - first:
+      213: -1501597487352584670
+    second: Gargona_2_Spritelist_31
+  - first:
+      213: 7094726173603080368
+    second: Gargona_2_Spritelist_32
+  - first:
+      213: 988120869458021858
+    second: Gargona_2_Spritelist_33
+  - first:
+      213: 1935052490649412322
+    second: Gargona_2_Spritelist_34
+  - first:
+      213: 4677481973710140279
+    second: Gargona_2_Spritelist_35
+  - first:
+      213: -8234073124277631134
+    second: Gargona_2_Spritelist_36
+  - first:
+      213: -15869649068144891
+    second: Gargona_2_Spritelist_37
+  - first:
+      213: 4561034549106348386
+    second: Gargona_2_Spritelist_38
+  - first:
+      213: -786659782450110355
+    second: Gargona_2_Spritelist_39
+  - first:
+      213: 8387349728572700428
+    second: Gargona_2_Spritelist_40
+  - first:
+      213: 8422335800507749531
+    second: Gargona_2_Spritelist_41
+  - first:
+      213: 1709159473414214225
+    second: Gargona_2_Spritelist_42
+  - first:
+      213: 7006021086927438339
+    second: Gargona_2_Spritelist_43
+  - first:
+      213: -6833878530754323913
+    second: Gargona_2_Spritelist_44
+  - first:
+      213: -8810518616493889921
+    second: Gargona_2_Spritelist_45
+  - first:
+      213: -6264981979312991171
+    second: Gargona_2_Spritelist_46
+  - first:
+      213: 6915526809714566214
+    second: Gargona_2_Spritelist_47
+  - first:
+      213: -9138840741246219440
+    second: Gargona_2_Spritelist_48
+  - first:
+      213: -6798716140707460057
+    second: Gargona_2_Spritelist_49
+  - first:
+      213: 4327543551807512657
+    second: Gargona_2_Spritelist_50
+  - first:
+      213: -7144240574877097739
+    second: Gargona_2_Spritelist_51
+  - first:
+      213: 72601517501471030
+    second: Gargona_2_Spritelist_52
+  - first:
+      213: -2614307947148947664
+    second: Gargona_2_Spritelist_53
+  - first:
+      213: -4397523978041104585
+    second: Gargona_2_Spritelist_54
+  - first:
+      213: 5674443906261855149
+    second: Gargona_2_Spritelist_55
+  - first:
+      213: -26453867319798289
+    second: Gargona_2_Spritelist_56
+  - first:
+      213: -4400794786913977516
+    second: Gargona_2_Spritelist_57
+  - first:
+      213: 5155975699239472448
+    second: Gargona_2_Spritelist_58
+  - first:
+      213: 2419542839543521975
+    second: Gargona_2_Spritelist_59
+  - first:
+      213: -5093387589653736156
+    second: Gargona_2_Spritelist_60
+  - first:
+      213: 6162939933029868248
+    second: Gargona_2_Spritelist_61
+  - first:
+      213: -4604301240937625975
+    second: Gargona_2_Spritelist_62
+  - first:
+      213: 7097210527706918105
+    second: Gargona_2_Spritelist_63
+  - first:
+      213: 7926350949848367987
+    second: Gargona_2_Spritelist_64
+  - first:
+      213: 274532397420194515
+    second: Gargona_2_Spritelist_65
+  - first:
+      213: 5975430775089241087
+    second: Gargona_2_Spritelist_66
+  - first:
+      213: 7786792770471683999
+    second: Gargona_2_Spritelist_67
+  - first:
+      213: 4858771120557672286
+    second: Gargona_2_Spritelist_68
+  - first:
+      213: -554668520183966958
+    second: Gargona_2_Spritelist_69
+  - first:
+      213: -3651551398853253303
+    second: Gargona_2_Spritelist_70
+  - first:
+      213: -1415456056468512522
+    second: Gargona_2_Spritelist_71
+  - first:
+      213: 6648155119462275026
+    second: Gargona_2_Spritelist_72
+  - first:
+      213: -324514909564830753
+    second: Gargona_2_Spritelist_73
+  - first:
+      213: -7483229534242003371
+    second: Gargona_2_Spritelist_74
+  - first:
+      213: 1781041525886931028
+    second: Gargona_2_Spritelist_75
+  - first:
+      213: 5877251347292944818
+    second: Gargona_2_Spritelist_76
+  - first:
+      213: -673716003380144547
+    second: Gargona_2_Spritelist_77
+  - first:
+      213: -1542780199148551249
+    second: Gargona_2_Spritelist_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1153
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec91e2b6dbc8cd50800000000000000
+      internalID: 6757875363853999332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1153
+        width: 67
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abb3682216f04430800000000000000
+      internalID: 3765279846329203625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1153
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520d31deabf0862a0800000000000000
+      internalID: -6744123146471485403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1153
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db661cdc189ab92d0800000000000000
+      internalID: -3270834329386654019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1153
+        width: 67
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f441881781f62d0800000000000000
+      internalID: -3283378727436398846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1153
+        width: 67
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6d00dc66b90bc40800000000000000
+      internalID: 5526087608611952383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_6
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1153
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5966c7c4e32ad2a90800000000000000
+      internalID: -7337029829461776747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1023
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0a1dc848edcfdb0800000000000000
+      internalID: -4756682445530488637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1023
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9728107973f6f6f0800000000000000
+      internalID: -651065393211234401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_9
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1023
+        width: 68
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530fc511a0dd97b10800000000000000
+      internalID: 1979856546516758581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_10
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1023
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1885d3bd7564f06a0800000000000000
+      internalID: -6480883995608524671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_11
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1023
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd0d265f578fe960800000000000000
+      internalID: 7633468736953716209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 895
+        width: 55
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b83a3762c2f9740800000000000000
+      internalID: 5160892241650354963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 895
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8142d9087160600800000000000000
+      internalID: 434060255247472857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_14
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 895
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6b2bc0de5b80720800000000000000
+      internalID: 2812697997017790180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_15
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 895
+        width: 62
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4718fe6ff2dce7e0800000000000000
+      internalID: -1734779761924237493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_16
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 895
+        width: 64
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d9b36eed2238bd0800000000000000
+      internalID: -2629219416713486982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_17
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 895
+        width: 70
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6255d74ce2287f0800000000000000
+      internalID: -611875177917765922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_18
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 895
+        width: 75
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed06d2f597379fe0800000000000000
+      internalID: -1182415259997696540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_19
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 895
+        width: 59
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0490d64266ed865d0800000000000000
+      internalID: -3068958615773836992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_20
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 895
+        width: 62
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6490b7153b918cc50800000000000000
+      internalID: 6685621904788359494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_21
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 895
+        width: 62
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1e3e258cf143640800000000000000
+      internalID: 5058703226688496109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_22
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 895
+        width: 63
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613c333c4cf396990800000000000000
+      internalID: -7392307199030869226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_23
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 895
+        width: 60
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7eaf346d0e76a910800000000000000
+      internalID: 1848303293063736957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_24
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 895
+        width: 49
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f40da8474ba2ea0800000000000000
+      internalID: -5896702349450129630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be17c355e18ffafa0800000000000000
+      internalID: -5787134186985066005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 767
+        width: 121
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21367f0087af0bac0800000000000000
+      internalID: -3841295088827800814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_27
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 767
+        width: 125
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063acfd657cd8a0a0800000000000000
+      internalID: -6869998834639133856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_28
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 767
+        width: 127
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8156124db232e710800000000000000
+      internalID: 1720993796047917454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_29
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 767
+        width: 125
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1440930ea3247a0800000000000000
+      internalID: -6394483786209017399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_30
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 767
+        width: 123
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017e49f3a7714f720800000000000000
+      internalID: 2878951875616761616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_31
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 767
+        width: 119
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226eab28a01492be0800000000000000
+      internalID: -1501597487352584670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 639
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8274c8dd7857260800000000000000
+      internalID: 7094726173603080368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_33
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 639
+        width: 58
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed023b02b286bd00800000000000000
+      internalID: 988120869458021858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_34
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 639
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2a4e6ecffaada10800000000000000
+      internalID: 1935052490649412322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_35
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 639
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773394e9211c9e040800000000000000
+      internalID: 4677481973710140279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_36
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 639
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26747d49e12babd80800000000000000
+      internalID: -8234073124277631134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_37
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 639
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507459463ae97cff0800000000000000
+      internalID: -15869649068144891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_38
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 639
+        width: 97
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26194cbc1cc0c4f30800000000000000
+      internalID: 4561034549106348386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_39
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 639
+        width: 71
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60a9f388193515f0800000000000000
+      internalID: -786659782450110355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_40
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 639
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c077b8ad32ad56470800000000000000
+      internalID: 8387349728572700428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_41
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 639
+        width: 75
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94d15089c522e470800000000000000
+      internalID: 8422335800507749531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_42
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 639
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152195d4c7728b710800000000000000
+      internalID: 1709159473414214225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_43
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 639
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302c43f1f036a3160800000000000000
+      internalID: 7006021086927438339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_44
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 639
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a58380faf2921a0800000000000000
+      internalID: -6833878530754323913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_45
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 639
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f766ae89fffbab580800000000000000
+      internalID: -8810518616493889921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_46
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 639
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3453d645105e09a0800000000000000
+      internalID: -6264981979312991171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_47
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 639
+        width: 49
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6442abf4ef2e8ff50800000000000000
+      internalID: 6915526809714566214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_48
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 511
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bc627f3c05c2180800000000000000
+      internalID: -9138840741246219440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_49
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 511
+        width: 58
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cca60f0bb16a1a0800000000000000
+      internalID: -6798716140707460057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_50
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 511
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150e48b9ee58e0c30800000000000000
+      internalID: 4327543551807512657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_51
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 511
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0a4888c0f8adc90800000000000000
+      internalID: -7144240574877097739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_52
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 511
+        width: 84
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63954dc02bee10100800000000000000
+      internalID: 72601517501471030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_53
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 511
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fc4b4f5cc18bbd0800000000000000
+      internalID: -2614307947148947664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_54
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 517
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737e895bd3bd8f2c0800000000000000
+      internalID: -4397523978041104585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_55
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 511
+        width: 51
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab2e921bacafbe40800000000000000
+      internalID: 5674443906261855149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 383
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5d77b095402aff0800000000000000
+      internalID: -26453867319798289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_57
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 383
+        width: 58
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bf99c257c3de2c0800000000000000
+      internalID: -4400794786913977516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_58
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 383
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d07b7b494bd8740800000000000000
+      internalID: 5155975699239472448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_59
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 383
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2e4dda461f39120800000000000000
+      internalID: 2419542839543521975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_60
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 383
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4255e4f19f6a059b0800000000000000
+      internalID: -5093387589653736156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_61
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 383
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2a0586739278550800000000000000
+      internalID: 6162939933029868248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_62
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 383
+        width: 111
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986c50f7a6c3a10c0800000000000000
+      internalID: -4604301240937625975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_63
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 383
+        width: 124
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc22205f5b5e7260800000000000000
+      internalID: 7097210527706918105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_64
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 383
+        width: 123
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373caca713e000e60800000000000000
+      internalID: 7926350949848367987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_65
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 383
+        width: 67
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da219bc2c55fc300800000000000000
+      internalID: 274532397420194515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_66
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 255
+        width: 62
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb912971aefce250800000000000000
+      internalID: 5975430775089241087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_67
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 255
+        width: 73
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f976b8fb4ce301c60800000000000000
+      internalID: 7786792770471683999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_68
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 255
+        width: 70
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5744cd5792dd6340800000000000000
+      internalID: 4858771120557672286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_69
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 255
+        width: 67
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213d75e6beb6d48f0800000000000000
+      internalID: -554668520183966958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_70
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 255
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94765487955135dc0800000000000000
+      internalID: -3651551398853253303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0e40f473a4b5ce0800000000000000
+      internalID: -1415456056468512522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_72
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 127
+        width: 58
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d75e339bddf24c50800000000000000
+      internalID: 6648155119462275026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_73
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 161
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbf11bb8671f7bf0800000000000000
+      internalID: -324514909564830753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_74
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 156
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5562bcee26a362890800000000000000
+      internalID: -7483229534242003371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_75
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 127
+        width: 58
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450d5b8d4d787b810800000000000000
+      internalID: 1781041525886931028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_76
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 68
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9f41b16f0309150800000000000000
+      internalID: 5877251347292944818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_77
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 68
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56d70b4dda76a6f0800000000000000
+      internalID: -673716003380144547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gargona_2_Spritelist_78
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 85
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa38e373591f69ae0800000000000000
+      internalID: -1542780199148551249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gargona_2_Spritelist_0: 6757875363853999332
+      Gargona_2_Spritelist_1: 3765279846329203625
+      Gargona_2_Spritelist_10: -6480883995608524671
+      Gargona_2_Spritelist_11: 7633468736953716209
+      Gargona_2_Spritelist_12: 5160892241650354963
+      Gargona_2_Spritelist_13: 434060255247472857
+      Gargona_2_Spritelist_14: 2812697997017790180
+      Gargona_2_Spritelist_15: -1734779761924237493
+      Gargona_2_Spritelist_16: -2629219416713486982
+      Gargona_2_Spritelist_17: -611875177917765922
+      Gargona_2_Spritelist_18: -1182415259997696540
+      Gargona_2_Spritelist_19: -3068958615773836992
+      Gargona_2_Spritelist_2: -6744123146471485403
+      Gargona_2_Spritelist_20: 6685621904788359494
+      Gargona_2_Spritelist_21: 5058703226688496109
+      Gargona_2_Spritelist_22: -7392307199030869226
+      Gargona_2_Spritelist_23: 1848303293063736957
+      Gargona_2_Spritelist_24: -5896702349450129630
+      Gargona_2_Spritelist_25: -5787134186985066005
+      Gargona_2_Spritelist_26: -3841295088827800814
+      Gargona_2_Spritelist_27: -6869998834639133856
+      Gargona_2_Spritelist_28: 1720993796047917454
+      Gargona_2_Spritelist_29: -6394483786209017399
+      Gargona_2_Spritelist_3: -3270834329386654019
+      Gargona_2_Spritelist_30: 2878951875616761616
+      Gargona_2_Spritelist_31: -1501597487352584670
+      Gargona_2_Spritelist_32: 7094726173603080368
+      Gargona_2_Spritelist_33: 988120869458021858
+      Gargona_2_Spritelist_34: 1935052490649412322
+      Gargona_2_Spritelist_35: 4677481973710140279
+      Gargona_2_Spritelist_36: -8234073124277631134
+      Gargona_2_Spritelist_37: -15869649068144891
+      Gargona_2_Spritelist_38: 4561034549106348386
+      Gargona_2_Spritelist_39: -786659782450110355
+      Gargona_2_Spritelist_4: -3283378727436398846
+      Gargona_2_Spritelist_40: 8387349728572700428
+      Gargona_2_Spritelist_41: 8422335800507749531
+      Gargona_2_Spritelist_42: 1709159473414214225
+      Gargona_2_Spritelist_43: 7006021086927438339
+      Gargona_2_Spritelist_44: -6833878530754323913
+      Gargona_2_Spritelist_45: -8810518616493889921
+      Gargona_2_Spritelist_46: -6264981979312991171
+      Gargona_2_Spritelist_47: 6915526809714566214
+      Gargona_2_Spritelist_48: -9138840741246219440
+      Gargona_2_Spritelist_49: -6798716140707460057
+      Gargona_2_Spritelist_5: 5526087608611952383
+      Gargona_2_Spritelist_50: 4327543551807512657
+      Gargona_2_Spritelist_51: -7144240574877097739
+      Gargona_2_Spritelist_52: 72601517501471030
+      Gargona_2_Spritelist_53: -2614307947148947664
+      Gargona_2_Spritelist_54: -4397523978041104585
+      Gargona_2_Spritelist_55: 5674443906261855149
+      Gargona_2_Spritelist_56: -26453867319798289
+      Gargona_2_Spritelist_57: -4400794786913977516
+      Gargona_2_Spritelist_58: 5155975699239472448
+      Gargona_2_Spritelist_59: 2419542839543521975
+      Gargona_2_Spritelist_6: -7337029829461776747
+      Gargona_2_Spritelist_60: -5093387589653736156
+      Gargona_2_Spritelist_61: 6162939933029868248
+      Gargona_2_Spritelist_62: -4604301240937625975
+      Gargona_2_Spritelist_63: 7097210527706918105
+      Gargona_2_Spritelist_64: 7926350949848367987
+      Gargona_2_Spritelist_65: 274532397420194515
+      Gargona_2_Spritelist_66: 5975430775089241087
+      Gargona_2_Spritelist_67: 7786792770471683999
+      Gargona_2_Spritelist_68: 4858771120557672286
+      Gargona_2_Spritelist_69: -554668520183966958
+      Gargona_2_Spritelist_7: -4756682445530488637
+      Gargona_2_Spritelist_70: -3651551398853253303
+      Gargona_2_Spritelist_71: -1415456056468512522
+      Gargona_2_Spritelist_72: 6648155119462275026
+      Gargona_2_Spritelist_73: -324514909564830753
+      Gargona_2_Spritelist_74: -7483229534242003371
+      Gargona_2_Spritelist_75: 1781041525886931028
+      Gargona_2_Spritelist_76: 5877251347292944818
+      Gargona_2_Spritelist_77: -673716003380144547
+      Gargona_2_Spritelist_78: -1542780199148551249
+      Gargona_2_Spritelist_8: -651065393211234401
+      Gargona_2_Spritelist_9: 1979856546516758581
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
