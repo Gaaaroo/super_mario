@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Huy/Scenes/1-1_Clone.unity
+    path: Assets/Huy/Scenes/1-1.unity
     guid: 8020378733816374aa12fcfe6f1b7995
   - enabled: 1
     path: Assets/Huynh/Scenes/2-1.unity
@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Huynh/Scenes/1-2.unity
     guid: a2a1cbb866864024e9e8567f82898a35
   - enabled: 1
-    path: Assets/Huy/Scenes/1-1_Clone.unity
+    path: Assets/Huy/Scenes/1-1.unity
     guid: 8020378733816374aa12fcfe6f1b7995
   - enabled: 1
     path: Assets/Huynh/Scenes/2-1.unity
