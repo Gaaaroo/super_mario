@@ -9831,6 +9831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldMario
       objectReference: {fileID: 0}
+    - target: {fileID: 2112104101375954364, guid: f36bc2fb8908abc459732307f6a0ebf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6032792069817759669, guid: f36bc2fb8908abc459732307f6a0ebf3, type: 3}
       propertyPath: idle
       value: 
