@@ -25,9 +25,6 @@ public class SpikeTrap : MonoBehaviour
         shownLocalPos = spike.localPosition;
         hiddenLocalPos = shownLocalPos + Vector3.down * hideDistance;
         spike.localPosition = hiddenLocalPos;
-
-        Collider2D col = GetComponent<Collider2D>();
-        col.isTrigger = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

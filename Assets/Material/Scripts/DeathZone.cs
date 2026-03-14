@@ -13,27 +13,9 @@ public class DeathZone : MonoBehaviour
             return;
 
         if (spawnPoint != null)
-            RespawnAtPoint(other.gameObject);
-        else
-            ReloadCurrentScene();
-    }
+            CheckpointManager.SetCheckpoint(spawnPoint.position);
 
-    private void RespawnAtPoint(GameObject player)
-    {
-        PlayerMovement movement = player.GetComponent<PlayerMovement>();
-        if (movement != null)
-        {
-            //movement.RespawnAt(spawnPoint.position);
-            return;
-        }
-        Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector2.zero;
-            rb.position = spawnPoint.position;
-        }
-        else
-            player.transform.position = spawnPoint.position;
+        ReloadCurrentScene();
     }
 
     private void ReloadCurrentScene()
