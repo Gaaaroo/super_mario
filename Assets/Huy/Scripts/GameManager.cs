@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-            DestroyImmediate(gameObject); 
+            DestroyImmediate(gameObject);
         else
         {
             Instance = this;
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     {
         Lives = 5;
 
-        LoadLevel(1, 1);
+        //LoadLevel(1, 1);
     }
 
     private void LoadLevel(int world, int stage)
