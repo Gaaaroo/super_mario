@@ -118,7 +118,7 @@ public class BossController : MonoBehaviour
     private void EnterRageMode()
     {
         isRageMode = true;
-        Debug.Log("Boss entered RAGE MODE!");
+        Debug.Log("Boss entered RAGE BAIT MODE!");
         GetComponent<SpriteRenderer>().color = new Color(1f, 0.5f, 0.5f);
     }
 
