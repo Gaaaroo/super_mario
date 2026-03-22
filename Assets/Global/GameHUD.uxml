@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="flex-grow: 1; width: 100%; height: 100%; position: relative; top: auto; right: auto;">
+        <ui:VisualElement name="HeartContainer" style="flex-grow: 0; flex-direction: row; width: 200px; height: 45px; right: auto; top: 0; position: absolute; left: 0; align-self: stretch; align-content: flex-start;">
+            <ui:VisualElement name="Heart" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Duic/tile_0044.png?fileID=2800000&amp;guid=10c57a7cdeb4cbc4fa51140dc40b9846&amp;type=3#tile_0044&quot;); background-size: 90% 100%; width: 40px; height: auto;"/>
+            <ui:VisualElement name="Heart" style="flex-grow: 0; flex-direction: row; background-image: url(&quot;project://database/Assets/Duic/tile_0044.png?fileID=2800000&amp;guid=10c57a7cdeb4cbc4fa51140dc40b9846&amp;type=3#tile_0044&quot;); background-size: 90% 100%; width: 40px;"/>
+            <ui:VisualElement name="Heart" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Duic/tile_0044.png?fileID=2800000&amp;guid=10c57a7cdeb4cbc4fa51140dc40b9846&amp;type=3#tile_0044&quot;); background-size: 90% 100%; width: 40px;"/>
+            <ui:VisualElement name="Heart" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Duic/tile_0044.png?fileID=2800000&amp;guid=10c57a7cdeb4cbc4fa51140dc40b9846&amp;type=3#tile_0044&quot;); background-size: 90% 100%; width: 40px;"/>
+            <ui:VisualElement name="Heart" style="flex-grow: 0; flex-direction: row; background-image: url(&quot;project://database/Assets/Duic/tile_0044.png?fileID=2800000&amp;guid=10c57a7cdeb4cbc4fa51140dc40b9846&amp;type=3#tile_0044&quot;); background-size: 90% 100%; width: 40px; justify-content: flex-start; align-self: stretch; align-content: flex-start;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="CoinContainer" style="flex-grow: 1; width: 150px; height: 45px; top: 0; right: 0; position: absolute; flex-direction: row;">
+            <ui:Label text="00" name="CoinCount" style="background-size: 27% 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 60%; height: 100%; font-size: 40px; -unity-text-align: upper-right; color: rgb(252, 152, 56); -unity-text-outline-color: rgb(55, 55, 55);"/>
+            <ui:VisualElement name="CoinIcon" style="flex-grow: 1; width: 40%; height: 44px; background-image: url(&quot;project://database/Assets/Global/Sprites/Style%201/Coin.png?fileID=2800000&amp;guid=0a13e0cc4bb41bc4bb7fc6c4e9be5fbc&amp;type=3#Coin&quot;); -unity-text-align: middle-center; font-size: 11px; -unity-slice-scale: 1px; background-size: 89% 83%; background-position-x: left 0; background-position-y: center;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
