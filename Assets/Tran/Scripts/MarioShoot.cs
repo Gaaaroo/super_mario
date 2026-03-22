@@ -9,6 +9,15 @@ public class Mario : MonoBehaviour
     public float fireCooldown = 0.5f;
     private float nextFireTime = 0f;
 
+    [Header("Sound")]
+    public AudioClip shootSound;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         // Bấm phím J (hoặc chuột trái) để bắn
@@ -21,6 +30,10 @@ public class Mario : MonoBehaviour
 
     private void Shoot()
     {
+        if (shootSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(shootSound);
+        }
         if (!isSpreadShot)
         {
             // Bắn 1 tia thẳng
