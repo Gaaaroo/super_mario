@@ -148,10 +148,6 @@ public class PlayerMovement : MonoBehaviour
     public float maxJumpHeight = 5f;
     public float maxJumpTime = 1f;
 
-    [Header("Âm thanh")]
-    public AudioClip jumpSound;
-    private AudioSource audioSource;
-
     public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
     public float gravity => (-2f * maxJumpHeight) / Mathf.Pow((maxJumpTime / 2f), 2);
 
@@ -164,8 +160,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         camera = Camera.main;
-
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -206,11 +200,6 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = jumpForce;
             jumping = true;
             jumpBufferTimer = 0f;
-
-            if (jumpSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(jumpSound);
-            }
         }
 
         // Ngang: áp dụng input ngay

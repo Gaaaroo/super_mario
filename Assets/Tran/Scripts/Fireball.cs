@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
@@ -8,7 +8,7 @@ public class Fireball : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = transform.right * speed;
+        rb.linearVelocity = -transform.right * speed;
         Destroy(gameObject, 5f);
     }
 
