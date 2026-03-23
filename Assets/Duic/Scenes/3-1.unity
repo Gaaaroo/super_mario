@@ -2482,7 +2482,7 @@ Transform:
   m_GameObject: {fileID: 405648759}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.399998, y: 0, z: -1}
+  m_LocalPosition: {x: 19.939999, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6363,7 +6363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.35
+      value: 5.89
       objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19818,23 +19818,6 @@ Transform:
   - {fileID: 1502788582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1686719577 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9024125915364728633, guid: f89abfcc02aff9c448f144a405db38b0, type: 3}
-  m_PrefabInstance: {fileID: 6132357444473691827}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1686719580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686719577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9e196d475ae8ae45b79180c2da0e1da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIManager
 --- !u!1001 &1689025181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22271,6 +22254,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4055490123708244306, guid: f89abfcc02aff9c448f144a405db38b0, type: 3}
+      propertyPath: stompSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9262b5499eae462419fa89c1059b603a, type: 3}
     - target: {fileID: 5204273066135925621, guid: f89abfcc02aff9c448f144a405db38b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.36414
@@ -22318,10 +22305,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9024125915364728633, guid: f89abfcc02aff9c448f144a405db38b0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1686719580}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f89abfcc02aff9c448f144a405db38b0, type: 3}
 --- !u!1001 &6317817419582530404
 PrefabInstance:
