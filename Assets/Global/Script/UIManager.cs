@@ -12,6 +12,15 @@ public class UIManager : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip coinSound; // Kéo file mp3 vào đây
+    public AudioClip stompSound; 
+
+    public void PlayStompSound()
+    {
+        if (audioSource != null && stompSound != null)
+        {
+            audioSource.PlayOneShot(stompSound);
+        }
+    }
 
     // Thêm hàm này để các script khác gọi
     public void PlayCoinSound()

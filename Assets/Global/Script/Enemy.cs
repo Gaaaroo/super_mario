@@ -68,6 +68,11 @@ public class Enemy : MonoBehaviour
         if (isStomped) return;
         isStomped = true;
 
+        if (UIManager.Instance != null)
+        {
+            UIManager.Instance.PlayStompSound();
+        }
+
         collider.enabled = false;
         if (rigidbody != null)
             rigidbody.simulated = false;

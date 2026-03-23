@@ -69,8 +69,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9e196d475ae8ae45b79180c2da0e1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  audioSource: {fileID: 0}
-  coinSound: {fileID: 8300000, guid: 8df50d0fa7340b447b2545d2dbe114c2, type: 3}
+  audioSource: {fileID: 3208180112758209918}
+  coinSound: {fileID: 8300000, guid: 7bd031a6a9415ac4a81ab53802374b8a, type: 3}
 --- !u!82 &3208180112758209918
 AudioSource:
   m_ObjectHideFlags: 0
