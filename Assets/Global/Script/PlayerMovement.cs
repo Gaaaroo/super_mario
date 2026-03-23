@@ -302,14 +302,6 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform respawnWhenHitByEnemy;
 
-    //private void HitByEnemy()
-    //{
-    //    if (respawnWhenHitByEnemy != null)
-    //        RespawnAt(respawnWhenHitByEnemy.position);
-    //    else
-    //        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-    //}
-
     private void HitByEnemy()
     {
         if (CheckpointManager.HasCheckpoint)
@@ -318,19 +310,30 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (respawnWhenHitByEnemy != null)
+//         if (respawnWhenHitByEnemy != null)
+//         {
+//             RespawnAt(respawnWhenHitByEnemy.position);
+//             return;
+//         }
+
+
+        DPlayerDeath dPlayerDeath = GetComponent<DPlayerDeath>();
+        if (dPlayerDeath != null)
         {
-            RespawnAt(respawnWhenHitByEnemy.position);
+            dPlayerDeath.Die();
             return;
         }
 
-        var deathScript = GetComponent<DPlayerDeath>();
-        if (deathScript != null)
+        // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
+        // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
+        DeathAnimation deathAnimation = GetComponent<DeathAnimation>();
+        if (deathAnimation != null)
         {
-            deathScript.Die();
+            deathAnimation.enabled = true;
             return;
         }
 
+        // Nếu lỡ quên gắn script thì load lại màn cho đỡ kẹt
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 

@@ -9255,6 +9255,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6550854758003525230, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
   m_PrefabInstance: {fileID: 4513569062903644672}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1838577160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278277999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4df2968b64d2cb4cb9208ee3010afdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mario
+  shootPoint: {fileID: 1465839912}
+  marioBulletPrefab: {fileID: 1192548234667411157, guid: 3a3d8949cd5d4be4189d1588406d3f8f, type: 3}
+  isSpreadShot: 0
+  fireCooldown: 0.5
+  shootSound: {fileID: 8300000, guid: 92e874e444727844da630fab8b692eb8, type: 3}
 --- !u!1001 &1840579683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11198,6 +11215,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4746659843486083107, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
+      propertyPath: Priority
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.421
@@ -11248,7 +11269,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6550854758003525230, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1465839912}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1927495395168411946, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
+      insertIndex: 7
+      addedObject: {fileID: 1838577160}
   m_SourcePrefab: {fileID: 100100000, guid: b98581a08299cb04d9e7f78f5e80b5ad, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
