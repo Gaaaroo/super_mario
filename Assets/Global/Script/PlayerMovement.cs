@@ -151,8 +151,12 @@ public class PlayerMovement : MonoBehaviour
     public float maxJumpTime = 1f;
 
     [Header("Âm thanh")]
+    public AudioSource jumpAudioSource; // Loa phát tiếng nhảy
+    public AudioSource runAudioSource;  // Loa phát tiếng chạy (Loop)
     public AudioClip jumpSound;
-    private AudioSource audioSource;
+    public AudioClip runSound; // Nhớ kéo file tiếng bước chân vào đây
+
+
 
     public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
     public float gravity => (-2f * maxJumpHeight) / Mathf.Pow((maxJumpTime / 2f), 2);
@@ -175,7 +179,8 @@ public class PlayerMovement : MonoBehaviour
         rigidbody.position = spawnPosition;
         transform.position = spawnPosition;
 
-        audioSource = GetComponent<AudioSource>();
+        if (jumpAudioSource == null)
+            jumpAudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -199,6 +204,8 @@ public class PlayerMovement : MonoBehaviour
             transform.eulerAngles = Vector3.zero;
         else if (inputAxis < 0f)
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
+
+        HandleRunSound();
     }
 
     private void FixedUpdate()
@@ -217,9 +224,9 @@ public class PlayerMovement : MonoBehaviour
             jumping = true;
             jumpBufferTimer = 0f;
 
-            if (jumpSound != null && audioSource != null)
+            if (jumpSound != null && jumpAudioSource != null)
             {
-                audioSource.PlayOneShot(jumpSound);
+                jumpAudioSource.PlayOneShot(jumpSound);
             }
         }
 
@@ -305,6 +312,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void HitByEnemy()
     {
+        if (GameData.isInvincible)
+        {
+            Debug.Log("Mario đang tàng hình, quái tuổi gì!");
+            return;
+        }
+
         if (CheckpointManager.HasCheckpoint)
         {
             // Cùng hậu quả với DeathAnimation.HandleLifeAndUI — trước đây chỉ RespawnAt nên không trừ mạng / UI.
@@ -372,5 +385,21 @@ public class PlayerMovement : MonoBehaviour
         transform.position = worldPosition;
         rigidbody.linearVelocity = v;
         velocity = v;
+    }
+
+    private void HandleRunSound()
+    {
+        if (runAudioSource == null)
+            return;
+
+        if (grounded && running)
+        {
+            if (!runAudioSource.isPlaying)
+                runAudioSource.Play();
+        }
+        else if (runAudioSource.isPlaying)
+        {
+            runAudioSource.Stop();
+        }
     }
 }

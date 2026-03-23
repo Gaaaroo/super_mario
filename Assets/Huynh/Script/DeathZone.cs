@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Collider2D))]
 public class DeathZone : MonoBehaviour
 {
+    [Header("Cài đặt loại vùng chết")]
+    [Tooltip("Tích vào nếu đây là Hố Sâu (Tàng hình vẫn chết). Bỏ tích nếu là Gai/Lửa (Tàng hình không chết).")]
+    public bool isInstantDeathPit = true;
+
     [Tooltip("If set, player respawns here. If empty, current scene is reloaded.")]
     public Transform spawnPoint;
 
@@ -12,18 +16,22 @@ public class DeathZone : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
-        // 1. Kiểm tra xem có phải Mario (Tag: Player) đụng vào không
-        if (other.CompareTag("Player"))
+        if (!isInstantDeathPit && GameData.isInvincible)
         {
-            DeathAnimation deathScript = other.GetComponent<DeathAnimation>();
+            Debug.Log("Mario đang tàng hình, đi xuyên qua vật cản!");
+            return;
+        }
 
-            if (deathScript != null)
+        DeathAnimation deathScript = other.GetComponent<DeathAnimation>();
+
+        if (deathScript != null)
+        {
+            if (deathScript.enabled == false)
             {
                 if (spawnPoint != null)
                     CheckpointManager.SetCheckpoint(spawnPoint.position);
 
                 deathScript.enabled = true;
-                // DeathAnimation tự LoadScene sau khi chạy xong — không reload ngay (tránh cắt anim / thời gian chết lúc nhanh lúc chậm).
                 return;
             }
         }
