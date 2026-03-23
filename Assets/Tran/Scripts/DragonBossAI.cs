@@ -52,13 +52,11 @@ public class DragonBossAI : MonoBehaviour
 
     private void Attack()
     {
-        GameObject fireball = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
-
-        Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
-
         float direction = player.position.x > transform.position.x ? 1 : -1;
+        Quaternion rotation = direction > 0 ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
 
-        rb.linearVelocity = new Vector2(direction * 12f, 0);
+        GameObject fireball = Instantiate(fireballPrefab, firePoint.position, rotation);
+        fireball.GetComponent<Fireball>().speed = 12f;
     }
 
     private void FacePlayer()

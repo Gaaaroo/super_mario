@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class Extentions
 {
-    private static LayerMask layerMask = LayerMask.GetMask("Default");
+    private static LayerMask layerMask = LayerMask.GetMask("Default", "Map", "Enemy");
 
     private static readonly RaycastHit2D[] CircleCastHits = new RaycastHit2D[16];
 
