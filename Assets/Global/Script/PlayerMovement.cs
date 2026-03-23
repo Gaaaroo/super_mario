@@ -179,7 +179,6 @@ public class PlayerMovement : MonoBehaviour
         transform.position = spawnPosition;
 
         audioSource = GetComponent<AudioSource>();
-
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -276,10 +275,8 @@ public class PlayerMovement : MonoBehaviour
             if (collision.contacts[0].normal.y > 0.5f)
             {
                 koopa.Stomp(transform); // Gọi hàm giẫm bẹp (thành cái mai)
-                                        // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
-                                        //GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 10f);
+                // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
                 GetComponent<Rigidbody2D>().linearVelocity = new Vector2(rigidbody.linearVelocity.x, 10f);
-
             }
             else
             {
@@ -305,31 +302,30 @@ public class PlayerMovement : MonoBehaviour
                 velocity.y = 0f;
     }
 
-
-    public Transform respawnWhenHitByEnemy;
-
     public void HitByEnemy()
     {
+        // 1. Đang nhấp nháy tàng hình thì không bị sao cả
         if (isInvincible) return;
 
+        // 2. Bật hiệu ứng nhấp nháy 2 giây
         StartCoroutine(FlashAndInvincible());
 
+        // 3. Gọi trừ mạng
         LifeManager lifeManager = FindAnyObjectByType<LifeManager>();
         if (lifeManager != null)
         {
             lifeManager.LoseLife();
         }
 
+        // =========================================================
+        // CODE CỦA TEAM BẠN ĐÃ ĐƯỢC TẠM TẮT (COMMENT) Ở DƯỚI ĐÂY
+        // Lý do: Nếu bật, Mario sẽ chết/dịch chuyển ngay lập tức, 
+        // làm mất tác dụng nhấp nháy chạy tiếp của bạn.
+        // =========================================================
+        /*
         if (CheckpointManager.HasCheckpoint)
         {
             RespawnAt(CheckpointManager.GetSpawnPosition(defaultSpawnPosition));
-            return;
-        }
-
-        DPlayerDeath dPlayerDeath = GetComponent<DPlayerDeath>();
-        if (dPlayerDeath != null)
-        {
-            dPlayerDeath.Die();
             return;
         }
 
@@ -340,7 +336,15 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
+        DPlayerDeath dPlayerDeath = GetComponent<DPlayerDeath>();
+        if (dPlayerDeath != null)
+        {
+            dPlayerDeath.Die();
+            return;
+        }
+
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        */
     }
 
     // Hàm tạo hiệu ứng nhấp nháy và đếm ngược 2 giây
