@@ -20,7 +20,7 @@ public class BossController : MonoBehaviour
     public Transform player;
 
     public float moveSpeed = 2f;
-    public float chaseDistance = 100f;
+    public float chaseDistance = 200f;
     public float stopDistance = 4f;
 
     [Header("Rage Mode")]
@@ -125,6 +125,17 @@ public class BossController : MonoBehaviour
     private void Die()
     {
         Debug.Log("Boss Defeated!");
+        LevelLoader loader = FindAnyObjectByType<LevelLoader>();
+
+        if (loader != null)
+        {
+            loader.LoadNextLevel();
+        }
+        else
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("WIN");
+        }
+
         Destroy(gameObject);
     }
 }

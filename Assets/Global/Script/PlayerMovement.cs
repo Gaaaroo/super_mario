@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip jumpSound;
     private AudioSource audioSource;
 
+    [Header("Bất Tử")]
+    public bool isInvincible = false;
+    private SpriteRenderer spriteRenderer;
+
     public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
     public float gravity => (-2f * maxJumpHeight) / Mathf.Pow(maxJumpTime / 2f, 2f);
 
@@ -43,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = spawnPosition;
 
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -152,10 +157,8 @@ public class PlayerMovement : MonoBehaviour
             if (collision.contacts[0].normal.y > 0.5f)
             {
                 koopa.Stomp(transform); // Gọi hàm giẫm bẹp (thành cái mai)
-                                        // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
-                                        //GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 10f);
+                // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
                 GetComponent<Rigidbody2D>().linearVelocity = new Vector2(rigidbody.linearVelocity.x, 10f);
-
             }
             else
             {
@@ -184,23 +187,39 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
-    public Transform respawnWhenHitByEnemy;
-
-    private void HitByEnemy()
+    public void HitByEnemy()
     {
+        // 1. Đang nhấp nháy tàng hình thì không bị sao cả
+        if (isInvincible) return;
+
+        // 2. Bật hiệu ứng nhấp nháy 2 giây
+        StartCoroutine(FlashAndInvincible());
+
+        // 3. Gọi trừ mạng
+        LifeManager lifeManager = FindAnyObjectByType<LifeManager>();
+        if (lifeManager != null)
+        {
+            lifeManager.LoseLife();
+        }
+
+        // =========================================================
+        // CODE CỦA TEAM BẠN ĐÃ ĐƯỢC TẠM TẮT (COMMENT) Ở DƯỚI ĐÂY
+        // Lý do: Nếu bật, Mario sẽ chết/dịch chuyển ngay lập tức, 
+        // làm mất tác dụng nhấp nháy chạy tiếp của bạn.
+        // =========================================================
+        /*
         if (CheckpointManager.HasCheckpoint)
         {
             RespawnAt(CheckpointManager.GetSpawnPosition(defaultSpawnPosition));
             return;
         }
 
-//         if (respawnWhenHitByEnemy != null)
-//         {
-//             RespawnAt(respawnWhenHitByEnemy.position);
-//             return;
-//         }
-
+        DeathAnimation deathAnimation = GetComponent<DeathAnimation>();
+        if (deathAnimation != null)
+        {
+            deathAnimation.enabled = true;
+            return;
+        }
 
         DPlayerDeath dPlayerDeath = GetComponent<DPlayerDeath>();
         if (dPlayerDeath != null)
@@ -209,17 +228,26 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
-        // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
-        DeathAnimation deathAnimation = GetComponent<DeathAnimation>();
-        if (deathAnimation != null)
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        */
+    }
+
+    // Hàm tạo hiệu ứng nhấp nháy và đếm ngược 2 giây
+    private System.Collections.IEnumerator FlashAndInvincible()
+    {
+        isInvincible = true; // Bật lá chắn
+
+        float blinkInterval = 0.1f; // Tốc độ nháy
+        float duration = 2f; // Thời gian bất tử (2 giây)
+
+        for (float t = 0; t < duration; t += blinkInterval)
         {
-            deathAnimation.enabled = true;
-            return;
+            spriteRenderer.enabled = !spriteRenderer.enabled; // Tắt/Bật hình ảnh liên tục
+            yield return new WaitForSeconds(blinkInterval); // Chờ 0.1s rồi lặp lại
         }
 
-        // Nếu lỡ quên gắn script thì load lại màn cho đỡ kẹt
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        spriteRenderer.enabled = true; // Đảm bảo hình ảnh được bật lại khi kết thúc
+        isInvincible = false; // Tắt lá chắn, có thể bị trúng đòn lại
     }
 
     /// <summary>Ép tường / crush — cùng luồng với HitByEnemy (checkpoint → respawn → Die / reload).</summary>
