@@ -1,8 +1,8 @@
 ﻿<Solution>
   <Project Path="Unity.AI.ModelSelector.csproj" />
   <Project Path="Unity.AI.Generators.IO.csproj" />
-  <Project Path="Unity.AI.Image.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Unity.AI.Image.csproj" />
   <Project Path="Unity.AI.Animate.csproj" />
   <Project Path="Unity.AI.Mesh.csproj" />
   <Project Path="Unity.AI.Sound.csproj" />

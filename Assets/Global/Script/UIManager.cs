@@ -10,6 +10,28 @@ public class UIManager : MonoBehaviour
     private Label coinLabel;
     private List<VisualElement> hearts = new List<VisualElement>();
 
+    public AudioSource audioSource;
+    public AudioClip coinSound; // Kéo file mp3 vào đây
+    public AudioClip stompSound; 
+
+    public void PlayStompSound()
+    {
+        if (audioSource != null && stompSound != null)
+        {
+            audioSource.PlayOneShot(stompSound);
+        }
+    }
+
+    // Thêm hàm này để các script khác gọi
+    public void PlayCoinSound()
+    {
+        if (audioSource != null && coinSound != null)
+        {
+            // Dùng PlayOneShot để nếu ăn nhiều xu liên tiếp, tiếng nhạc sẽ chồng lên nhau nghe rất sướng tai
+            audioSource.PlayOneShot(coinSound);
+        }
+    }
+
     private void OnEnable()
     {
         Instance = this;
