@@ -20,24 +20,35 @@ public class FlagPole : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(MoveTo(flag, poleBottom.position));
+            if (flag != null && poleBottom != null)
+                StartCoroutine(MoveTo(flag, poleBottom.position));
             StartCoroutine(LevelCompleteSequence(other.transform));
 
-            MusicManager.Instance.SetMusic(false);
+            if (MusicManager.Instance != null)
+                MusicManager.Instance.SetMusic(false);
             PlaySound(winSound);
 
-            FindAnyObjectByType<LevelLoader>().LoadNextLevel();
+            var loader = FindAnyObjectByType<LevelLoader>();
+            if (loader != null)
+                loader.LoadNextLevel();
         }
     }
 
     private IEnumerator LevelCompleteSequence(Transform player)
     {
-        player.GetComponent<MarioMovement>().enabled = false;
+        var marioMovement = player.GetComponent<MarioMovement>();
+        if (marioMovement != null)
+            marioMovement.enabled = false;
+        var playerMovement = player.GetComponent<PlayerMovement>();
+        if (playerMovement != null)
+            playerMovement.enabled = false;
 
-        yield return MoveTo(player, poleBottom.position);
+        if (poleBottom != null)
+            yield return MoveTo(player, poleBottom.position);
         yield return MoveTo(player, player.position + Vector3.right);
         yield return MoveTo(player, player.position + Vector3.right + Vector3.down);
-        yield return MoveTo(player, castle.position);
+        if (castle != null)
+            yield return MoveTo(player, castle.position);
 
         player.gameObject.SetActive(false);
     }
@@ -55,7 +66,7 @@ public class FlagPole : MonoBehaviour
 
     private void PlaySound(AudioClip audioClip)
     {
-        if (audioClip == null) return;
+        if (audioClip == null || audioSource == null) return;
         audioSource.PlayOneShot(audioClip);
     }
 }

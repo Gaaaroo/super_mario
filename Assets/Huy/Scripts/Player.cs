@@ -23,6 +23,14 @@ public class Player : MonoBehaviour
         _deathAnimation = GetComponent<DeathAnimationCustom>();
         audioSource = GetComponent<AudioSource>();
         collider2D = GetComponent<Collider2D>();
+
+        // Mario nhỏ lúc vào game: tắt BigRender trước khi PlayerSpriteRender.OnEnable bật sprite Big
+        // (OnEnable luôn spriteRenderer.enabled = true nên không thể chỉ dựa vào SpriteRenderer tắt trong prefab).
+        if (SmallRender != null && BigRender != null)
+        {
+            BigRender.enabled = false;
+            SmallRender.enabled = true;
+        }
     }
 
     public void Hit()

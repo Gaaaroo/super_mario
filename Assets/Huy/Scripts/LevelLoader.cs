@@ -19,6 +19,7 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
+        CheckpointManager.ClearCheckpoint();
         SceneManager.LoadScene(levelIndex);
     }
 }

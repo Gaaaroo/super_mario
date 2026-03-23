@@ -125,6 +125,7 @@
 
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -306,6 +307,22 @@ public class PlayerMovement : MonoBehaviour
     {
         if (CheckpointManager.HasCheckpoint)
         {
+            // Cùng hậu quả với DeathAnimation.HandleLifeAndUI — trước đây chỉ RespawnAt nên không trừ mạng / UI.
+            GameData.lives--;
+            GameData.coins = GameData.coinsAtLevelStart;
+            LifeManager.RefreshAllLifeUI();
+
+            if (GameData.lives <= 0)
+            {
+                GameData.lives = 5;
+                GameData.coins = 0;
+                GameData.coinsAtLevelStart = 0;
+                CheckpointManager.ClearCheckpoint();
+                LifeManager.RefreshAllLifeUI();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                return;
+            }
+
             RespawnAt(CheckpointManager.GetSpawnPosition(defaultSpawnPosition));
             return;
         }

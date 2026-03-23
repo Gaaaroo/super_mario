@@ -22,7 +22,7 @@ public class Fireball : MonoBehaviour
             // Nếu tìm thấy, gọi hàm xử lý trúng đòn mà ta vừa viết
             if (mario != null)
             {
-                mario.HitByEnemy();
+                mario.DieFromCrushOrHazard();
             }
 
             // Viên đạn tự nổ

@@ -33,11 +33,7 @@ public class DeathAnimation : MonoBehaviour
 
         GameData.coins = GameData.coinsAtLevelStart;
 
-        // Cập nhật lên thanh máu (UI Toolkit)
-        if (UIManager.Instance != null)
-        {
-            UIManager.Instance.UpdateUI();
-        }
+        LifeManager.RefreshAllLifeUI();
 
         Debug.Log("Mario đã chết. Mạng còn lại: " + GameData.lives);
     }
@@ -72,6 +68,14 @@ public class DeathAnimation : MonoBehaviour
         // Tắt script di chuyển
         PlayerMovement pm = GetComponent<PlayerMovement>();
         if (pm != null) pm.enabled = false;
+
+        // Tránh PlayerSpriteRender / AnimatedSprite (con Small/Big) ghi đè sprite chết mỗi LateUpdate
+        foreach (PlayerSpriteRender psr in GetComponentsInChildren<PlayerSpriteRender>(true))
+            psr.enabled = false;
+        foreach (PlayerSpriteRenderCustom psrc in GetComponentsInChildren<PlayerSpriteRenderCustom>(true))
+            psrc.enabled = false;
+        foreach (AnimatedSprite anim in GetComponentsInChildren<AnimatedSprite>(true))
+            anim.enabled = false;
     }
 
     private IEnumerator Animate()
@@ -95,24 +99,25 @@ public class DeathAnimation : MonoBehaviour
 
     private void ReloadLevel()
     {
+        string sceneName = SceneManager.GetActiveScene().name;
+
         if (GameData.lives > 0)
         {
-            // CÒN MẠNG: Cho chơi lại màn hiện tại để gỡ gạc
-            GameData.coins = GameData.coinsAtLevelStart; // Reset tiền của màn này
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameData.coins = GameData.coinsAtLevelStart;
+            SceneManager.LoadScene(sceneName);
         }
         else
         {
-            // HẾT MẠNG: Game Over thực sự!
-            Debug.Log("GAME OVER - Quay về vạch xuất phát!");
+            Debug.Log("GAME OVER - Load lại cùng map, reset mạng / tiền.");
 
-            // Reset toàn bộ dữ liệu như mới
             GameData.lives = 5;
             GameData.coins = 0;
             GameData.coinsAtLevelStart = 0;
 
-            // Đá người chơi về Map 1 (Giả sử tên scene Map 1 của ông là "Map1")
-            SceneManager.LoadScene("Map1");
+            // Hết mạng = chơi lại từ đầu màn, không spawn tại checkpoint cũ
+            CheckpointManager.ClearCheckpoint();
+
+            SceneManager.LoadScene(sceneName);
         }
     }
 }

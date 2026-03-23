@@ -18,6 +18,9 @@ public class SharedLevelExit : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
+        // Checkpoint chỉ dùng trong một màn; sang màn mới phải xóa kẻo spawn theo tọa độ cờ màn trước.
+        CheckpointManager.ClearCheckpoint();
+
         if (useSceneIndex)
             SceneManager.LoadScene(nextSceneIndex);
         else

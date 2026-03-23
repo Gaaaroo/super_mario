@@ -1,56 +1,92 @@
-﻿using UnityEngine;
+using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Hiển thị / đồng bộ mạng với <see cref="GameData.lives"/> (cùng nguồn với PlayerMovement, DeathAnimation, v.v.).
+/// </summary>
 public class LifeManager : MonoBehaviour
 {
-    public static int lives = 5;
-
     public TextMeshProUGUI livesText;
 
-    void Start()
+    private void OnEnable()
     {
-        if (livesText == null)
-        {
-            GameObject textObject = GameObject.Find("LivesText");
-            if (textObject != null)
-            {
-                livesText = textObject.GetComponent<TextMeshProUGUI>();
-            }
-            else
-            {
-                Debug.LogWarning("Not found");
-            }
-        }
-
-        UpdateUI();
+        BindTextIfNeeded();
+        RefreshLivesText();
     }
 
-    public void LoseLife()
+    private void Start()
     {
-        lives--;
-        UpdateUI();
-
-        if (lives <= 0)
-        {
-            GameOver();
-        }
+        BindTextIfNeeded();
+        RefreshLivesText();
     }
 
-    void UpdateUI()
+    private void BindTextIfNeeded()
     {
         if (livesText != null)
-        {
-            livesText.text = "LIVES: " + lives;
-        }
+            return;
+
+        GameObject textObject = GameObject.Find("LivesText");
+        if (textObject != null)
+            livesText = textObject.GetComponent<TextMeshProUGUI>();
+        else
+            Debug.LogWarning("LifeManager: Không tìm thấy GameObject tên 'LivesText'.");
     }
 
-    void GameOver()
+    public void RefreshLivesText()
     {
-        Debug.Log("GAME OVER!");
+        BindTextIfNeeded();
+        if (livesText != null)
+            livesText.text = "LIVES: " + GameData.lives;
+    }
 
-        lives = 5;
+    /// <summary>Gọi sau mỗi lần đổi <see cref="GameData.lives"/> (ví dụ từ <see cref="UIManager.UpdateUI"/>).</summary>
+    public static void SyncAllLivesLabels()
+    {
+        foreach (LifeManager lm in Object.FindObjectsByType<LifeManager>(FindObjectsSortMode.None))
+            lm.RefreshLivesText();
+    }
 
-        SceneManager.LoadScene(3);
+    /// <summary>Cập nhật xu + tim (UI Toolkit) + chữ LIVES (TMP) sau khi đổi <see cref="GameData"/>.</summary>
+    public static void RefreshAllLifeUI()
+    {
+        if (UIManager.Instance != null)
+            UIManager.Instance.UpdateUI();
+        else
+            SyncAllLivesLabels();
+    }
+
+    /// <summary>UnityEvent / trigger — trừ 1 mạng trong GameData, cập nhật mọi UI.</summary>
+    public void LoseLife()
+    {
+        if (GameData.lives <= 0)
+            return;
+
+        GameData.lives--;
+        GameData.coins = GameData.coinsAtLevelStart;
+
+        if (UIManager.Instance != null)
+            UIManager.Instance.UpdateUI();
+        else
+            SyncAllLivesLabels();
+
+        if (GameData.lives <= 0)
+            ApplyGameOverThenReload();
+    }
+
+    private static void ApplyGameOverThenReload()
+    {
+        Debug.Log("GAME OVER! Reset mạng / xu, load lại màn.");
+        GameData.lives = 5;
+        GameData.coins = 0;
+        GameData.coinsAtLevelStart = 0;
+        CheckpointManager.ClearCheckpoint();
+
+        if (UIManager.Instance != null)
+            UIManager.Instance.UpdateUI();
+        else
+            SyncAllLivesLabels();
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

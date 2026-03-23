@@ -15,18 +15,16 @@ public class DeathZone : MonoBehaviour
         // 1. Kiểm tra xem có phải Mario (Tag: Player) đụng vào không
         if (other.CompareTag("Player"))
         {
-            // 2. Tìm script DeathAnimation nằm trên người Mario
             DeathAnimation deathScript = other.GetComponent<DeathAnimation>();
 
             if (deathScript != null)
             {
-                // 3. BẬT script đó lên
-                // Khi script này ON, nó sẽ tự chạy hàm OnEnable:
-                // - Trừ GameData.lives
-                // - Cập nhật UIManager
-                // - Diễn hoạt ảnh Mario nằm im/văng lên
-                // - Tự load lại scene sau 2-3 giây
+                if (spawnPoint != null)
+                    CheckpointManager.SetCheckpoint(spawnPoint.position);
+
                 deathScript.enabled = true;
+                // DeathAnimation tự LoadScene sau khi chạy xong — không reload ngay (tránh cắt anim / thời gian chết lúc nhanh lúc chậm).
+                return;
             }
         }
 

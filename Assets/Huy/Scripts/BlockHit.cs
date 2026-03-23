@@ -91,10 +91,15 @@ public class BlockHit : MonoBehaviour
     {
         if (audioSource == null) return;
 
-        MusicManager.Instance.SetMusic(false);   // Tắt nhạc nền
-
-        PlaySound(collectSound);
-
-        MusicManager.Instance.SetMusic(true, 7f);    // Bật lại nhạc nền sau khi phát âm thanh
+        if (MusicManager.Instance != null)
+        {
+            MusicManager.Instance.SetMusic(false);
+            PlaySound(collectSound);
+            MusicManager.Instance.SetMusic(true, 7f);
+        }
+        else
+        {
+            PlaySound(collectSound);
+        }
     }
 }

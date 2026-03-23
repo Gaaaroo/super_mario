@@ -60,6 +60,9 @@ public class UIManager : MonoBehaviour
             // Nếu vị trí tim lớn hơn số mạng thì ẩn đi
             hearts[i].style.display = (i < GameData.lives) ? DisplayStyle.Flex : DisplayStyle.None;
         }
+
+        // Chữ "LIVES: N" (TextMeshPro) từ LifeManager — các màn boss thường dùng TMP, không chỉ tim UI Toolkit
+        LifeManager.SyncAllLivesLabels();
     }
 
     private void Awake()
