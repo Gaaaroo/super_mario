@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerMovement : MonoBehaviour
+public class MarioMovement : MonoBehaviour
 {
     private Camera mainCamera;
     private Rigidbody2D rb;
@@ -13,12 +13,6 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 8f;
     public float maxJumpHeight = 5f;
     public float maxJumpTime = 1f;
-    public float jumpBufferTimer = 0f;
-
-    [Header("Âm thanh")]
-    public AudioClip jumpSound;
-    private AudioSource audioSource;
-
     public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
     public float gravity => (-2f * maxJumpHeight) / Mathf.Pow(maxJumpTime / 2f, 2f);
 
@@ -49,10 +43,6 @@ public class PlayerMovement : MonoBehaviour
         capsuleCollider.enabled = false;
         velocity = Vector2.zero;
         jumping = false;
-        rb = GetComponent<Rigidbody2D>();
-        mainCamera = Camera.main;
-
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -117,12 +107,6 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = jumpForce;
             jumping = true;
-            jumpBufferTimer = 0f;
-
-            if (jumpSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(jumpSound);
-            }
         }
     }
 
@@ -151,42 +135,6 @@ public class PlayerMovement : MonoBehaviour
         else if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
         {
             // Stop vertical movement if mario bonks his head
-
-        // Kiểm tra nếu đụng trúng con Rùa (Koopa)
-        Koopa koopa = collision.gameObject.GetComponent<Koopa>();
-
-        if (koopa != null)
-        {
-            // Kiểm tra hướng va chạm bằng "Normal"
-            // Nếu normal.y > 0.5 nghĩa là Mario đang nằm TRÊN đầu con rùa
-            if (collision.contacts[0].normal.y > 0.5f)
-            {
-                koopa.Stomp(transform); // Gọi hàm giẫm bẹp (thành cái mai)
-                                        // Cho Mario nhảy nẩy lên một cái cho đúng kiểu
-                                        //GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 10f);
-                GetComponent<Rigidbody2D>().linearVelocity = new Vector2(rb.linearVelocity.x, 10f);
-
-            }
-            else
-            {
-                // 2. Nếu đụng từ bên hông
-                // KIỂM TRA: Nếu nó đã là cái mai VÀ nó đang ĐỨNG YÊN
-                if (koopa.IsShell && !koopa.IsPushed)
-                {
-                    // Mario không chết! 
-                    // Lúc này hàm OnCollisionEnter2D bên script Koopa sẽ lo việc đá cái mai đi.
-                    Debug.Log("Mario đang đá cái mai, không chết.");
-                }
-                else
-                {
-                    // Nếu nó đang đi bộ HOẶC cái mai đang bay vèo vèo -> Mario mới chết
-                    Debug.Log("Mario đụng quái và chết!");
-                    HitByEnemy();
-                }
-            }
-        }
-
-        if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
             if (transform.DotTest(collision.transform, Vector2.up))
             {
                 velocity.y = 0f;
@@ -194,36 +142,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
-    public Transform respawnWhenHitByEnemy;
-
-    //private void HitByEnemy()
-    //{
-    //    if (respawnWhenHitByEnemy != null)
-    //        RespawnAt(respawnWhenHitByEnemy.position);
-    //    else
-    //        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-    //}
-
-    private void HitByEnemy()
-    {
-        // Tìm script Death trên người Mario và gọi hàm Die()
-        DPlayerDeath deathScript = GetComponent<DPlayerDeath>();
-        if (deathScript != null)
-        {
-            deathScript.Die();
-        }
-        else
-        {
-            // Nếu không có script death thì mới load scene thẳng
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-        }
-    }
-
-    public void RespawnAt(Vector2 position)
-    {
-        velocity = Vector2.zero;
-        rb.position = position;
-        rb.linearVelocity = Vector2.zero;
-    }
 }

@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
     public PlayerSpriteRender SmallRender;
     public PlayerSpriteRender BigRender;
 
-    private DeathAnimation _deathAnimation;
+    private DeathAnimationCustom _deathAnimation;
 
     public bool Big => BigRender.enabled;
     public bool Small => SmallRender.enabled;
@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        _deathAnimation = GetComponent<DeathAnimation>();
+        _deathAnimation = GetComponent<DeathAnimationCustom>();
         audioSource = GetComponent<AudioSource>();
         collider2D = GetComponent<Collider2D>();
     }

@@ -23,6 +23,8 @@ public class DeathBarrier : MonoBehaviour
 
     private void Die()
     {
+        MusicManager.Instance.SetMusic(false);
+
         PlaySound(dieSound);
 
         PlayerHealth.Instance.ResetLevelAgain(10f);
