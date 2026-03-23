@@ -161,6 +161,9 @@ public class PlayerMovement : MonoBehaviour
     public bool running => Mathf.Abs(velocity.x) > 0.25f || Mathf.Abs(inputAxis) > 0.25f;
     public bool sliding => (inputAxis > 0f && velocity.x < 0f) || (inputAxis < 0f && velocity.x > 0f);
 
+    /// <summary>velocity.y hiện tại — trùng logic stomp enemy (<see cref="OnCollisionEnter2D"/> dùng velocity.y &lt;= 0).</summary>
+    public float VerticalMoveSpeed => velocity.y;
+
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -314,26 +317,43 @@ public class PlayerMovement : MonoBehaviour
 //         }
 
 
+        DPlayerDeath dPlayerDeath = GetComponent<DPlayerDeath>();
+        if (dPlayerDeath != null)
+        {
+            dPlayerDeath.Die();
+            return;
+        }
+
         // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
         // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
-        DeathAnimation deathScript = GetComponent<DeathAnimation>();
+        DeathAnimation deathAnimation = GetComponent<DeathAnimation>();
+        if (deathAnimation != null)
+        {
+            deathAnimation.enabled = true;
+            return;
+        }
 
-        if (deathScript != null)
-        {
-            deathScript.enabled = true;
-        }
-        else
-        {
-            // Nếu lỡ quên gắn script thì load lại màn cho đỡ kẹt
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-        }
+        // Nếu lỡ quên gắn script thì load lại màn cho đỡ kẹt
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
+    /// <summary>Ép tường / crush — cùng luồng với HitByEnemy (checkpoint → respawn → Die / reload).</summary>
+    public void DieFromCrushOrHazard() => HitByEnemy();
 
     public void RespawnAt(Vector2 position)
     {
         velocity = Vector2.zero;
         rigidbody.position = position;
         rigidbody.linearVelocity = Vector2.zero;
+    }
+
+    /// <summary>Dịch chuyển Mario (cổng teleport). Đồng bộ vector vận tốc nội bộ với rigidbody.</summary>
+    public void TeleportTo(Vector2 worldPosition, bool preserveVelocity = true)
+    {
+        Vector2 v = preserveVelocity ? rigidbody.linearVelocity : Vector2.zero;
+        rigidbody.position = worldPosition;
+        transform.position = worldPosition;
+        rigidbody.linearVelocity = v;
+        velocity = v;
     }
 }
