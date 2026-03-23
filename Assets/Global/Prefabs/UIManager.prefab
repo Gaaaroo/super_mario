@@ -71,6 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   audioSource: {fileID: 3208180112758209918}
   coinSound: {fileID: 8300000, guid: 7bd031a6a9415ac4a81ab53802374b8a, type: 3}
+  stompSound: {fileID: 8300000, guid: 9262b5499eae462419fa89c1059b603a, type: 3}
 --- !u!82 &3208180112758209918
 AudioSource:
   m_ObjectHideFlags: 0
