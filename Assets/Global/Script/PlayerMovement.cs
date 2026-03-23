@@ -293,28 +293,23 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform respawnWhenHitByEnemy;
 
-    //private void HitByEnemy()
-    //{
-    //    if (respawnWhenHitByEnemy != null)
-    //        RespawnAt(respawnWhenHitByEnemy.position);
-    //    else
-    //        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-    //}
-
     private void HitByEnemy()
     {
-        // Tìm script Death trên người Mario và gọi hàm Die()
-        DPlayerDeath deathScript = GetComponent<DPlayerDeath>();
+        // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
+        // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
+        DeathAnimation deathScript = GetComponent<DeathAnimation>();
+
         if (deathScript != null)
         {
-            deathScript.Die();
+            deathScript.enabled = true;
         }
         else
         {
-            // Nếu không có script death thì mới load scene thẳng
+            // Nếu lỡ quên gắn script thì load lại màn cho đỡ kẹt
             UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         }
     }
+
 
     public void RespawnAt(Vector2 position)
     {
