@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class PlayerSpriteRender : MonoBehaviour
+public class PlayerSpriteRenderCustom : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
-    private PlayerMovement movement;
+    private MarioMovement movement;
 
     public Sprite idle;
     public Sprite jump;
@@ -13,7 +13,7 @@ public class PlayerSpriteRender : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        movement = GetComponentInParent<PlayerMovement>();
+        movement = GetComponentInParent<MarioMovement>();
     }
 
     private void OnEnable()

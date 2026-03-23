@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class FlagPole : MonoBehaviour
+public class FlagPolePlayerMovement : MonoBehaviour
 {
     public Transform flag;
     public Transform poleBottom;
@@ -23,7 +23,7 @@ public class FlagPole : MonoBehaviour
             StartCoroutine(MoveTo(flag, poleBottom.position));
             StartCoroutine(LevelCompleteSequence(other.transform));
 
-            MusicManager.Instance.SetMusic(false);
+            // MusicManager.Instance.SetMusic(false);
             PlaySound(winSound);
 
             FindAnyObjectByType<LevelLoader>().LoadNextLevel();
@@ -32,7 +32,7 @@ public class FlagPole : MonoBehaviour
 
     private IEnumerator LevelCompleteSequence(Transform player)
     {
-        player.GetComponent<MarioMovement>().enabled = false;
+        player.GetComponent<PlayerMovement>().enabled = false;
 
         yield return MoveTo(player, poleBottom.position);
         yield return MoveTo(player, player.position + Vector3.right);

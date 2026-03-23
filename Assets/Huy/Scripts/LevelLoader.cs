@@ -14,7 +14,8 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
-        transition.SetTrigger("Fade");
+        if (transition != null)
+            transition.SetTrigger("Fade");
 
         yield return new WaitForSeconds(transitionTime);
 

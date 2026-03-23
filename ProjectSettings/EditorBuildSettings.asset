@@ -10,10 +10,13 @@ EditorBuildSettings:
     guid: b9cdf774911e6eb449275b9942982f59
   - enabled: 1
     path: Assets/Huy/Scenes/1-1.unity
-    guid: 057d4323259620741ac67ac6077cee22
+    guid: 8020378733816374aa12fcfe6f1b7995
   - enabled: 1
     path: Assets/Huynh/Scenes/2-1.unity
     guid: 1754915e1815bed48bee071e2b514caa
+  - enabled: 1
+    path: Assets/Duic/Scenes/3-1.unity
+    guid: 48e72bb81a202745384d11f8258b8697
   - enabled: 1
     path: Assets/Tran/Scenes/Boss-1.unity
     guid: 4d621707e1888b94aace005391e8731c
