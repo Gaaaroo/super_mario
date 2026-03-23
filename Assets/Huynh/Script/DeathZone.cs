@@ -1,43 +1,32 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(Collider2D))]
 public class DeathZone : MonoBehaviour
 {
-    [Tooltip("If set, player respawns here. If empty, current scene is reloaded.")]
-    public Transform spawnPoint;
+    [Header("Cài đặt loại vùng chết")]
+    [Tooltip("Tích vào nếu đây là Hố Sâu (Tàng hình vẫn chết). Bỏ tích nếu là Gai/Lửa (Tàng hình không chết).")]
+    public bool isInstantDeathPit = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player"))
-            return;
-
-        // 1. Kiểm tra xem có phải Mario (Tag: Player) đụng vào không
+        // 1. Chỉ xử lý nếu là Mario (Tag: Player)
         if (other.CompareTag("Player"))
         {
-            // 2. Tìm script DeathAnimation nằm trên người Mario
+            // 2. Nếu là GAI (isInstantDeathPit = false) VÀ đang tàng hình -> THA
+            if (!isInstantDeathPit && GameData.isInvincible)
+            {
+                Debug.Log("Mario đang tàng hình, đi xuyên qua vật cản!");
+                return; // Thoát hàm, không chết
+            }
+
+            // 3. Nếu là HỐ SÂU, hoặc là GAI nhưng không tàng hình -> CHẾT
             DeathAnimation deathScript = other.GetComponent<DeathAnimation>();
 
-            if (deathScript != null)
+            // Chỉ kích hoạt nếu script chết đang tắt (tránh trừ 2 lần mạng)
+            if (deathScript != null && deathScript.enabled == false)
             {
-                // 3. BẬT script đó lên
-                // Khi script này ON, nó sẽ tự chạy hàm OnEnable:
-                // - Trừ GameData.lives
-                // - Cập nhật UIManager
-                // - Diễn hoạt ảnh Mario nằm im/văng lên
-                // - Tự load lại scene sau 2-3 giây
                 deathScript.enabled = true;
+                Debug.Log("Mario đã chết tại: " + gameObject.name);
             }
         }
-
-        if (spawnPoint != null)
-            CheckpointManager.SetCheckpoint(spawnPoint.position);
-
-        ReloadCurrentScene();
-    }
-
-    private void ReloadCurrentScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

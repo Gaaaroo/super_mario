@@ -16,8 +16,12 @@ public class PlayerMovement : MonoBehaviour
     public float jumpBufferTimer = 0f;
 
     [Header("Âm thanh")]
+    public AudioSource jumpAudioSource; // Loa phát tiếng nhảy
+    public AudioSource runAudioSource;  // Loa phát tiếng chạy (Loop)
     public AudioClip jumpSound;
-    private AudioSource audioSource;
+    public AudioClip runSound; // Nhớ kéo file tiếng bước chân vào đây
+
+
 
     [Header("Bất Tử")]
     public bool isInvincible = false;
@@ -40,14 +44,6 @@ public class PlayerMovement : MonoBehaviour
 
         rigidbody = GetComponent<Rigidbody2D>();
         camera = Camera.main;
-        defaultSpawnPosition = rigidbody.position;
-
-        Vector2 spawnPosition = CheckpointManager.GetSpawnPosition(defaultSpawnPosition);
-        rigidbody.position = spawnPosition;
-        transform.position = spawnPosition;
-
-        audioSource = GetComponent<AudioSource>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -61,7 +57,15 @@ public class PlayerMovement : MonoBehaviour
             GroundedMovement();
         }
 
-        ApplyGravity();
+        jumpBufferTimer -= Time.deltaTime;
+
+        // Xoay sprite theo hướng di chuyển
+        if (inputAxis > 0f)
+            transform.eulerAngles = Vector3.zero;
+        else if (inputAxis < 0f)
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+
+        HandleRunSound();
     }
 
     private void FixedUpdate()
@@ -114,9 +118,9 @@ public class PlayerMovement : MonoBehaviour
             jumping = true;
             jumpBufferTimer = 0f;
 
-            if (jumpSound != null && audioSource != null)
+            if (jumpSound != null && jumpAudioSource != null)
             {
-                audioSource.PlayOneShot(jumpSound);
+                jumpAudioSource.PlayOneShot(jumpSound);
             }
         }
     }
@@ -189,8 +193,17 @@ public class PlayerMovement : MonoBehaviour
 
     public void HitByEnemy()
     {
-        // 1. Đang nhấp nháy tàng hình thì không bị sao cả
-        if (isInvincible) return;
+
+        // Nếu đang tàng hình thì bỏ qua, coi như không có chuyện gì xảy ra
+        if (GameData.isInvincible)
+        {
+            Debug.Log("Mario đang tàng hình, quái tuổi gì!");
+            return;
+        }
+
+        // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
+        // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
+        DeathAnimation deathScript = GetComponent<DeathAnimation>();
 
         // 2. Bật hiệu ứng nhấp nháy 2 giây
         StartCoroutine(FlashAndInvincible());
@@ -260,13 +273,24 @@ public class PlayerMovement : MonoBehaviour
         rigidbody.linearVelocity = Vector2.zero;
     }
 
-    /// <summary>Dịch chuyển Mario (cổng teleport). Đồng bộ vector vận tốc nội bộ với rigidbody.</summary>
-    public void TeleportTo(Vector2 worldPosition, bool preserveVelocity = true)
+    void HandleRunSound()
     {
-        Vector2 v = preserveVelocity ? rigidbody.linearVelocity : Vector2.zero;
-        rigidbody.position = worldPosition;
-        transform.position = worldPosition;
-        rigidbody.linearVelocity = v;
-        velocity = v;
+        // ĐIỀU KIỆN: Đang đứng trên đất VÀ đang chạy (running là biến ông đã có)
+        if (grounded && running)
+        {
+            // Nếu cái loa chưa hát thì bảo nó hát
+            if (!runAudioSource.isPlaying)
+            {
+                runAudioSource.Play();
+            }
+        }
+        else
+        {
+            // Nếu đang nhảy hoặc đứng yên thì bắt nó im lặng
+            if (runAudioSource.isPlaying)
+            {
+                runAudioSource.Stop();
+            }
+        }
     }
 }
