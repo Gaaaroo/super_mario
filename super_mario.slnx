@@ -1,4 +1,21 @@
 ﻿<Solution>
+  <Project Path="Unity.AI.ModelSelector.csproj" />
+  <Project Path="Unity.AI.Generators.IO.csproj" />
+  <Project Path="Unity.AI.Image.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Unity.AI.Animate.csproj" />
+  <Project Path="Unity.AI.Mesh.csproj" />
+  <Project Path="Unity.AI.Sound.csproj" />
+  <Project Path="Unity.AI.Generators.UI.csproj" />
+  <Project Path="Unity.AI.Pbr.csproj" />
+  <Project Path="Unity.AI.Generators.Redux.csproj" />
+  <Project Path="Unity.AI.Generators.Sdk.csproj" />
+  <Project Path="Unity.AI.Generators.Asset.csproj" />
+  <Project Path="Unity.AI.Generators.Tools.csproj" />
+  <Project Path="Unity.AI.Generators.UI.AIDropdownIntegrations.csproj" />
+  <Project Path="Unity.AI.Generators.Contexts.csproj" />
+  <Project Path="Unity.AI.Generators.IO.Srp.csproj" />
+  <Project Path="Unity.AI.Pbr.Srp.csproj" />
+  <Project Path="Unity.AI.Animate.Motion.Runtime.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
 </Solution>
