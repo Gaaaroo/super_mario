@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 7597796773551734052}
   - component: {fileID: 4749464734093287826}
   - component: {fileID: 2234248941813610070}
-  - component: {fileID: 5857423248162516757}
-  - component: {fileID: 9007678090641306332}
+  - component: {fileID: 2034906578855809117}
+  - component: {fileID: -664524488149622288}
   m_Layer: 7
   m_Name: Goomba
   m_TagString: Untagged
@@ -190,20 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EntityMovement
   Speed: 2
   Direction: {x: -1, y: 0}
---- !u!114 &5857423248162516757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3572748388624177754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52c7ab331ac9f5347b3482b6ee1fdbd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Goomba
-  FlatSprite: {fileID: 21300000, guid: dceda839fbcc74441aef5f93f32bdc1a, type: 3}
---- !u!114 &9007678090641306332
+--- !u!114 &2034906578855809117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,8 +199,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 3572748388624177754}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dfb202cb396e56488b16f847a55dd68, type: 3}
+  m_Script: {fileID: 11500000, guid: d2d76772b349f9340ad168e1712e5a0d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DeathAnimation
+  m_EditorClassIdentifier: Assembly-CSharp::DeathAnimationCustom
   SpriteRenderer: {fileID: 2194002424452905418}
   DeadSprite: {fileID: 0}
+--- !u!114 &-664524488149622288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572748388624177754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878847b01714f054799bfb8629803067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoombaCustom
+  FlatSprite: {fileID: 21300000, guid: dceda839fbcc74441aef5f93f32bdc1a, type: 3}
