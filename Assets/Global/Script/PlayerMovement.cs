@@ -152,6 +152,10 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip jumpSound;
     private AudioSource audioSource;
 
+    [Header("Bất Tử")]
+    public bool isInvincible = false;
+    private SpriteRenderer spriteRenderer;
+
     public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
     public float gravity => (-2f * maxJumpHeight) / Mathf.Pow((maxJumpTime / 2f), 2);
 
@@ -166,6 +170,8 @@ public class PlayerMovement : MonoBehaviour
         camera = Camera.main;
 
         audioSource = GetComponent<AudioSource>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -301,19 +307,42 @@ public class PlayerMovement : MonoBehaviour
     //        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     //}
 
-    private void HitByEnemy()
+    public void HitByEnemy()
     {
-        // Tìm script Death trên người Mario và gọi hàm Die()
+        if (isInvincible) return;
+
+        StartCoroutine(FlashAndInvincible());
+
+        LifeManager lifeManager = FindAnyObjectByType<LifeManager>();
+        if (lifeManager != null)
+        {
+            lifeManager.LoseLife();
+        }
+
+
         DPlayerDeath deathScript = GetComponent<DPlayerDeath>();
         if (deathScript != null)
         {
             deathScript.Die();
         }
-        else
+    }
+
+    // Hàm tạo hiệu ứng nhấp nháy và đếm ngược 2 giây
+    private System.Collections.IEnumerator FlashAndInvincible()
+    {
+        isInvincible = true; // Bật lá chắn
+
+        float blinkInterval = 0.1f; // Tốc độ nháy
+        float duration = 2f; // Thời gian bất tử (2 giây)
+
+        for (float t = 0; t < duration; t += blinkInterval)
         {
-            // Nếu không có script death thì mới load scene thẳng
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            spriteRenderer.enabled = !spriteRenderer.enabled; // Tắt/Bật hình ảnh liên tục
+            yield return new WaitForSeconds(blinkInterval); // Chờ 0.1s rồi lặp lại
         }
+
+        spriteRenderer.enabled = true; // Đảm bảo hình ảnh được bật lại khi kết thúc
+        isInvincible = false; // Tắt lá chắn, có thể bị trúng đòn lại
     }
 
     public void RespawnAt(Vector2 position)
