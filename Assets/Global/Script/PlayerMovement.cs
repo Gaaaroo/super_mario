@@ -131,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private new Camera camera;
     private new Rigidbody2D rigidbody;
+    private Vector2 defaultSpawnPosition;
 
     private Vector2 velocity;
     private float inputAxis;
@@ -164,6 +165,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         camera = Camera.main;
+        defaultSpawnPosition = rigidbody.position;
+
+        Vector2 spawnPosition = CheckpointManager.GetSpawnPosition(defaultSpawnPosition);
+        rigidbody.position = spawnPosition;
+        transform.position = spawnPosition;
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -295,6 +301,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void HitByEnemy()
     {
+        if (CheckpointManager.HasCheckpoint)
+        {
+            RespawnAt(CheckpointManager.GetSpawnPosition(defaultSpawnPosition));
+            return;
+        }
+
+//         if (respawnWhenHitByEnemy != null)
+//         {
+//             RespawnAt(respawnWhenHitByEnemy.position);
+//             return;
+//         }
+
+
         // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
         // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
         DeathAnimation deathScript = GetComponent<DeathAnimation>();
