@@ -229,31 +229,6 @@ MonoBehaviour:
   isSpreadShot: 0
   fireCooldown: 0.5
   shootSound: {fileID: 8300000, guid: 92e874e444727844da630fab8b692eb8, type: 3}
---- !u!114 &8517920463857641203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927495395168411946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e2f91b4d3c564e9a0f1b2c3d4e5f61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCrushDeath
-  crushLayers:
-    serializedVersion: 2
-    m_Bits: 1
-  normalThreshold: 0.22
-  castDistance: 0.6
-  crushDepth: 0.28
-  sameColliderNormalDotMax: -0.35
-  minHitPointSeparation: 0.12
-  detectHorizontalCrush: 1
-  detectVerticalCrush: 1
-  useContactDetection: 1
-  useCastFallback: 1
-  framesToConfirm: 2
 --- !u!82 &3733770790782789787
 AudioSource:
   m_ObjectHideFlags: 0
@@ -351,6 +326,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8517920463857641203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927495395168411946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e2f91b4d3c564e9a0f1b2c3d4e5f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCrushDeath
+  crushLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  normalThreshold: 0.22
+  castDistance: 0.6
+  crushDepth: 0.28
+  sameColliderNormalDotMax: -0.35
+  minHitPointSeparation: 0.12
+  detectHorizontalCrush: 1
+  detectVerticalCrush: 1
+  useContactDetection: 1
+  useCastFallback: 1
+  framesToConfirm: 2
 --- !u!1 &2112104101375954364
 GameObject:
   m_ObjectHideFlags: 0
