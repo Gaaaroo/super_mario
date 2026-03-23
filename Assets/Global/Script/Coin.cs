@@ -27,6 +27,7 @@ public class Coin : MonoBehaviour
         if (UIManager.Instance != null)
         {
             UIManager.Instance.UpdateUI();
+            UIManager.Instance.PlayCoinSound();
         }
 
         // 3. Tùy chọn: Thêm hiệu ứng âm thanh hoặc hạt bụi ở đây (nếu có)
