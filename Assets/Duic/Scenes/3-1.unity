@@ -741,6 +741,7 @@ Transform:
   - {fileID: 1285544945}
   - {fileID: 947267}
   - {fileID: 2011888792}
+  - {fileID: 1034364197}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &166678284
@@ -1034,7 +1035,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpikeTrap
   spike: {fileID: 0}
   hideDistance: 1
+  extraFlyDistance: 0
+  shiftLeft: 0
+  shiftRight: 0
+  shiftDown: 0
   riseTime: 0.1
+  scaleUpOnTrigger: 0
+  triggeredScaleMultiplier: 3
+  scaleUpTime: 0
+  hideSpriteUntilTriggered: 0
 --- !u!61 &345525366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4076,7 +4085,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpikeTrap
   spike: {fileID: 0}
   hideDistance: 16
+  extraFlyDistance: 0
+  shiftLeft: 0
+  shiftRight: 0
+  shiftDown: 0
   riseTime: 2
+  scaleUpOnTrigger: 0
+  triggeredScaleMultiplier: 3
+  scaleUpTime: 0
+  hideSpriteUntilTriggered: 0
 --- !u!61 &1206562350
 BoxCollider2D:
   m_ObjectHideFlags: 0

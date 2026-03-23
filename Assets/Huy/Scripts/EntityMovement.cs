@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class EntityMovement : MonoBehaviour
 {
     public float Speed = 1f;

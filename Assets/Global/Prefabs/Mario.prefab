@@ -115,6 +115,9 @@ MonoBehaviour:
   moveSpeed: 8
   maxJumpHeight: 5
   maxJumpTime: 1
+  jumpBufferTimer: 0
+  jumpSound: {fileID: 0}
+  respawnWhenHitByEnemy: {fileID: 0}
 --- !u!1 &2112104101375954364
 GameObject:
   m_ObjectHideFlags: 0

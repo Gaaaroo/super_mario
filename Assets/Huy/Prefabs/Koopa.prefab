@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 3800734588113561667}
   - component: {fileID: 492135639715795566}
   - component: {fileID: 1789991042075480616}
-  - component: {fileID: -4307826463302097445}
   - component: {fileID: 86413846068784698}
   - component: {fileID: 4881060090405436145}
-  - component: {fileID: 5489880962748094210}
+  - component: {fileID: 547439039271288691}
+  - component: {fileID: -5522481991012840792}
   m_Layer: 7
   m_Name: Koopa
   m_TagString: Untagged
@@ -207,20 +207,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.25, y: 1.25}
   m_EdgeRadius: 0
---- !u!114 &-4307826463302097445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972852830218011013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edc2fb7a734de5944b18619c634af276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Koopa
-  ShellSprite: {fileID: 21300000, guid: f882caca8db1d9547be2c030f5a6b82e, type: 3}
-  ShellSpeed: 12
 --- !u!114 &86413846068784698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +237,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8b6997b812bbe4840ae3afbb20f2312b, type: 3}
   - {fileID: 21300000, guid: abbbfac621fc9c549b0e50177934ecfc, type: 3}
   framerate: 0.16666667
---- !u!114 &5489880962748094210
+--- !u!114 &547439039271288691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972852830218011013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ee5873052728946a9e380a20937dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KoopaCustom
+  ShellSprite: {fileID: 21300000, guid: f882caca8db1d9547be2c030f5a6b82e, type: 3}
+  ShellSpeed: 12
+--- !u!114 &-5522481991012840792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,8 +260,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972852830218011013}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dfb202cb396e56488b16f847a55dd68, type: 3}
+  m_Script: {fileID: 11500000, guid: d2d76772b349f9340ad168e1712e5a0d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DeathAnimation
+  m_EditorClassIdentifier: Assembly-CSharp::DeathAnimationCustom
   SpriteRenderer: {fileID: 8317838782842493260}
   DeadSprite: {fileID: 0}
