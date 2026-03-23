@@ -16,8 +16,16 @@ public class Fireball : MonoBehaviour
     {
         if (hitInfo.CompareTag("Player"))
         {
-            // Vi du: hitInfo.GetComponent<MarioHealth>().LoseLife();
-            Debug.Log("Mario bị trúng đạn! -1 Live");
+            // Tìm script di chuyển của Mario
+            PlayerMovement mario = hitInfo.GetComponent<PlayerMovement>();
+
+            // Nếu tìm thấy, gọi hàm xử lý trúng đòn mà ta vừa viết
+            if (mario != null)
+            {
+                mario.HitByEnemy();
+            }
+
+            // Viên đạn tự nổ
             Destroy(gameObject);
         }
     }

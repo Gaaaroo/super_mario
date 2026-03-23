@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2004371468491414260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2709190012842089811}
+  m_Layer: 0
+  m_Name: Bottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2709190012842089811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004371468491414260}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7089279013951943033}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2263911282630653757
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7089279013951943033}
   - component: {fileID: 1993533468279759735}
-  m_Layer: 0
+  - component: {fileID: 3250639291082297402}
+  m_Layer: 2
   m_Name: Flag Pole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,6 +65,7 @@ Transform:
   - {fileID: 1304914699223893358}
   - {fileID: 7029652202689039627}
   - {fileID: 177914069547532298}
+  - {fileID: 2709190012842089811}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1993533468279759735
@@ -81,6 +114,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25, y: 11}
   m_EdgeRadius: 0
+--- !u!114 &3250639291082297402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2263911282630653757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c6b7ee36739144eab61a9c95e269d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlagPole
+  flag: {fileID: 1304914699223893358}
+  poleBottom: {fileID: 2709190012842089811}
+  castle: {fileID: 0}
+  speed: 6
+  winSound: {fileID: 8300000, guid: 08b1059da86923845b805cafc7969d9d, type: 3}
 --- !u!1 &6305344723439201397
 GameObject:
   m_ObjectHideFlags: 0

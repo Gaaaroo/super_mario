@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 07cea43dc874d0f43809f910954261da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8070214189527764318
+    second: Mimic attack -Sheet_0
+  - first:
+      213: -4726845383550762865
+    second: Mimic attack -Sheet_1
+  - first:
+      213: -2867667717927203123
+    second: Mimic attack -Sheet_2
+  - first:
+      213: 6059398064618468214
+    second: Mimic attack -Sheet_3
+  - first:
+      213: 1822989426722085753
+    second: Mimic attack -Sheet_4
+  - first:
+      213: 1791294698813048251
+    second: Mimic attack -Sheet_5
+  - first:
+      213: 5677924444591618162
+    second: Mimic attack -Sheet_6
+  - first:
+      213: 7286160264220820887
+    second: Mimic attack -Sheet_7
+  - first:
+      213: 5536626037615148532
+    second: Mimic attack -Sheet_8
+  - first:
+      213: 4351283554350547630
+    second: Mimic attack -Sheet_9
+  - first:
+      213: 3815694046080070690
+    second: Mimic attack -Sheet_10
+  - first:
+      213: 804426124117430029
+    second: Mimic attack -Sheet_11
+  - first:
+      213: 3921050311812232546
+    second: Mimic attack -Sheet_12
+  - first:
+      213: -1696084196107732764
+    second: Mimic attack -Sheet_13
+  - first:
+      213: -5456910657836957121
+    second: Mimic attack -Sheet_14
+  - first:
+      213: 6317948835530919524
+    second: Mimic attack -Sheet_15
+  - first:
+      213: -4456959054725561490
+    second: Mimic attack -Sheet_16
+  - first:
+      213: 7371558367440511838
+    second: Mimic attack -Sheet_17
+  - first:
+      213: 4385127716228322435
+    second: Mimic attack -Sheet_18
+  - first:
+      213: 3060620607377048566
+    second: Mimic attack -Sheet_19
+  - first:
+      213: 8255343367837214843
+    second: Mimic attack -Sheet_20
+  - first:
+      213: -7319053378507147736
+    second: Mimic attack -Sheet_21
+  - first:
+      213: 8984780020480322645
+    second: Mimic attack -Sheet_22
+  - first:
+      213: -3485364669439227524
+    second: Mimic attack -Sheet_23
+  - first:
+      213: -6098795891548562259
+    second: Mimic attack -Sheet_24
+  - first:
+      213: -6770766457365071554
+    second: Mimic attack -Sheet_25
+  - first:
+      213: 3454908854243241184
+    second: Mimic attack -Sheet_26
+  - first:
+      213: 3457244076654483119
+    second: Mimic attack -Sheet_27
+  - first:
+      213: -5466099721492390015
+    second: Mimic attack -Sheet_28
+  - first:
+      213: -5000008059498012134
+    second: Mimic attack -Sheet_29
+  - first:
+      213: -7291937164502120879
+    second: Mimic attack -Sheet_30
+  - first:
+      213: -1738948676099109952
+    second: Mimic attack -Sheet_31
+  - first:
+      213: 1882030191870297279
+    second: Mimic attack -Sheet_32
+  - first:
+      213: -6905066106220671409
+    second: Mimic attack -Sheet_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 15
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d8e1c2c092fff60800000000000000
+      internalID: 8070214189527764318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 15
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f800345ea2fd66eb0800000000000000
+      internalID: -4726845383550762865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 15
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce0813776ff338d0800000000000000
+      internalID: -2867667717927203123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 15
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673f54a8f6e471450800000000000000
+      internalID: 6059398064618468214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 15
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b1019993f8c4910800000000000000
+      internalID: 1822989426722085753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 15
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5cac2b905fbd810800000000000000
+      internalID: 1791294698813048251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 15
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278f36d033a0cce40800000000000000
+      internalID: 5677924444591618162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 15
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795c2751824ad1560800000000000000
+      internalID: 7286160264220820887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 15
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fdba320c0c06dc40800000000000000
+      internalID: 5536626037615148532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 15
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2401ea65dd26c30800000000000000
+      internalID: 4351283554350547630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 15
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224fc2cb48114f430800000000000000
+      internalID: 3815694046080070690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 15
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f40104c45e92b00800000000000000
+      internalID: 804426124117430029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 15
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265b006eb7e5a6630800000000000000
+      internalID: 3921050311812232546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 16
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e838dde86c4678e0800000000000000
+      internalID: -1696084196107732764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 15
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f32c59c2ba82544b0800000000000000
+      internalID: -5456910657836957121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 15
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ec9e2fdfcdda750800000000000000
+      internalID: 6317948835530919524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 15
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e634f9c8a53b522c0800000000000000
+      internalID: -4456959054725561490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 15
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53a95c67490d4660800000000000000
+      internalID: 7371558367440511838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 19
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384528cac6a1bdc30800000000000000
+      internalID: 4385127716228322435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 19
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f303fef932897a20800000000000000
+      internalID: 3060620607377048566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 21
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7860daed0fd09270800000000000000
+      internalID: 8255343367837214843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 15
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82675f1fabf7d6a90800000000000000
+      internalID: -7319053378507147736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ca1c143d950bc70800000000000000
+      internalID: 8984780020480322645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 18
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79c065ac4f71afc0800000000000000
+      internalID: -3485364669439227524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacd2ae0379bc5ba0800000000000000
+      internalID: -6098795891548562259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 18
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39ff93b7c76902a0800000000000000
+      internalID: -6770766457365071554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 15
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec258c4c4d42ff20800000000000000
+      internalID: 3454908854243241184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 15
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa650d2ab299aff20800000000000000
+      internalID: 3457244076654483119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 15
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f959193438424b0800000000000000
+      internalID: -5466099721492390015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 15
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12e78b39276c9ab0800000000000000
+      internalID: -5000008059498012134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 15
+        width: 59
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156c16188c5ddca90800000000000000
+      internalID: -7291937164502120879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 15
+        width: 68
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb0a7674630ed7e0800000000000000
+      internalID: -1738948676099109952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 15
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb44df2fc705e1a10800000000000000
+      internalID: 1882030191870297279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic attack -Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 15
+        width: 54
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e802406f64c20a0800000000000000
+      internalID: -6905066106220671409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mimic attack -Sheet_0: 8070214189527764318
+      Mimic attack -Sheet_1: -4726845383550762865
+      Mimic attack -Sheet_10: 3815694046080070690
+      Mimic attack -Sheet_11: 804426124117430029
+      Mimic attack -Sheet_12: 3921050311812232546
+      Mimic attack -Sheet_13: -1696084196107732764
+      Mimic attack -Sheet_14: -5456910657836957121
+      Mimic attack -Sheet_15: 6317948835530919524
+      Mimic attack -Sheet_16: -4456959054725561490
+      Mimic attack -Sheet_17: 7371558367440511838
+      Mimic attack -Sheet_18: 4385127716228322435
+      Mimic attack -Sheet_19: 3060620607377048566
+      Mimic attack -Sheet_2: -2867667717927203123
+      Mimic attack -Sheet_20: 8255343367837214843
+      Mimic attack -Sheet_21: -7319053378507147736
+      Mimic attack -Sheet_22: 8984780020480322645
+      Mimic attack -Sheet_23: -3485364669439227524
+      Mimic attack -Sheet_24: -6098795891548562259
+      Mimic attack -Sheet_25: -6770766457365071554
+      Mimic attack -Sheet_26: 3454908854243241184
+      Mimic attack -Sheet_27: 3457244076654483119
+      Mimic attack -Sheet_28: -5466099721492390015
+      Mimic attack -Sheet_29: -5000008059498012134
+      Mimic attack -Sheet_3: 6059398064618468214
+      Mimic attack -Sheet_30: -7291937164502120879
+      Mimic attack -Sheet_31: -1738948676099109952
+      Mimic attack -Sheet_32: 1882030191870297279
+      Mimic attack -Sheet_33: -6905066106220671409
+      Mimic attack -Sheet_4: 1822989426722085753
+      Mimic attack -Sheet_5: 1791294698813048251
+      Mimic attack -Sheet_6: 5677924444591618162
+      Mimic attack -Sheet_7: 7286160264220820887
+      Mimic attack -Sheet_8: 5536626037615148532
+      Mimic attack -Sheet_9: 4351283554350547630
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
