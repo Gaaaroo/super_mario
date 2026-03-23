@@ -215,7 +215,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeathAnimationCustom
   SpriteRenderer: {fileID: 8753078894799341527}
   DeadSprite: {fileID: 21300000, guid: e9345d9e9a21949478e4292b904591cd, type: 3}
---- !u!82 &5042676680517586404
+--- !u!114 &3083769988847155683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927495395168411946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4df2968b64d2cb4cb9208ee3010afdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mario
+  shootPoint: {fileID: 0}
+  marioBulletPrefab: {fileID: 1192548234667411157, guid: 3a3d8949cd5d4be4189d1588406d3f8f, type: 3}
+  isSpreadShot: 0
+  fireCooldown: 0.5
+  shootSound: {fileID: 8300000, guid: 92e874e444727844da630fab8b692eb8, type: 3}
+--- !u!82 &3733770790782789787
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,7 +329,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1971057052391873914
+--- !u!114 &8517920463857641203
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,106 +338,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1927495395168411946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e28cb468da19bf6428bd12bb3cb7e13e, type: 3}
+  m_Script: {fileID: 11500000, guid: c7e2f91b4d3c564e9a0f1b2c3d4e5f61, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerPowerUpManager
---- !u!82 &447951460048950973
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927495395168411946}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 0dd37a804d93c1742b5ee7eaf878be3c, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCrushDeath
+  crushLayers:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_Bits: 1
+  normalThreshold: 0.22
+  castDistance: 0.6
+  crushDepth: 0.28
+  sameColliderNormalDotMax: -0.35
+  minHitPointSeparation: 0.12
+  detectHorizontalCrush: 1
+  detectVerticalCrush: 1
+  useContactDetection: 1
+  useCastFallback: 1
+  framesToConfirm: 2
 --- !u!1 &2112104101375954364
 GameObject:
   m_ObjectHideFlags: 0
