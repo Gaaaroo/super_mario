@@ -149,8 +149,12 @@ public class PlayerMovement : MonoBehaviour
     public float maxJumpTime = 1f;
 
     [Header("Âm thanh")]
+    public AudioSource jumpAudioSource; // Loa phát tiếng nhảy
+    public AudioSource runAudioSource;  // Loa phát tiếng chạy (Loop)
     public AudioClip jumpSound;
-    private AudioSource audioSource;
+    public AudioClip runSound; // Nhớ kéo file tiếng bước chân vào đây
+
+
 
     public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
     public float gravity => (-2f * maxJumpHeight) / Mathf.Pow((maxJumpTime / 2f), 2);
@@ -164,8 +168,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         camera = Camera.main;
-
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -189,6 +191,8 @@ public class PlayerMovement : MonoBehaviour
             transform.eulerAngles = Vector3.zero;
         else if (inputAxis < 0f)
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
+
+        HandleRunSound();
     }
 
     private void FixedUpdate()
@@ -207,9 +211,9 @@ public class PlayerMovement : MonoBehaviour
             jumping = true;
             jumpBufferTimer = 0f;
 
-            if (jumpSound != null && audioSource != null)
+            if (jumpSound != null && jumpAudioSource != null)
             {
-                audioSource.PlayOneShot(jumpSound);
+                jumpAudioSource.PlayOneShot(jumpSound);
             }
         }
 
@@ -295,6 +299,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void HitByEnemy()
     {
+
+        // Nếu đang tàng hình thì bỏ qua, coi như không có chuyện gì xảy ra
+        if (GameData.isInvincible)
+        {
+            Debug.Log("Mario đang tàng hình, quái tuổi gì!");
+            return;
+        }
+
         // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
         // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
         DeathAnimation deathScript = GetComponent<DeathAnimation>();
@@ -316,5 +328,26 @@ public class PlayerMovement : MonoBehaviour
         velocity = Vector2.zero;
         rigidbody.position = position;
         rigidbody.linearVelocity = Vector2.zero;
+    }
+
+    void HandleRunSound()
+    {
+        // ĐIỀU KIỆN: Đang đứng trên đất VÀ đang chạy (running là biến ông đã có)
+        if (grounded && running)
+        {
+            // Nếu cái loa chưa hát thì bảo nó hát
+            if (!runAudioSource.isPlaying)
+            {
+                runAudioSource.Play();
+            }
+        }
+        else
+        {
+            // Nếu đang nhảy hoặc đứng yên thì bắt nó im lặng
+            if (runAudioSource.isPlaying)
+            {
+                runAudioSource.Stop();
+            }
+        }
     }
 }
