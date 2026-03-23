@@ -188,9 +188,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6e82f452248584fa0297fe6c0c1642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  jumpBufferTime: 0.12
+  coyoteTime: 0.1
   moveSpeed: 8
   maxJumpHeight: 5
   maxJumpTime: 1
+  respawnWhenHitByEnemy: {fileID: 0}
 --- !u!114 &1910954368905515589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5987229072018299348
 Transform:
   m_ObjectHideFlags: 0

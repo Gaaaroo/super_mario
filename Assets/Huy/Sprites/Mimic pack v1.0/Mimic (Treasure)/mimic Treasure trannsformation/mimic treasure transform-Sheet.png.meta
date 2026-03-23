@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 126ddc7d12645114a88ab059761c65c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2336580780325669347
+    second: mimic treasure transform-Sheet_0
+  - first:
+      213: -3309168538848148684
+    second: mimic treasure transform-Sheet_1
+  - first:
+      213: 5317398765255467812
+    second: mimic treasure transform-Sheet_2
+  - first:
+      213: -3413792413613785124
+    second: mimic treasure transform-Sheet_3
+  - first:
+      213: 6380397002532214758
+    second: mimic treasure transform-Sheet_4
+  - first:
+      213: -1322259242191737370
+    second: mimic treasure transform-Sheet_5
+  - first:
+      213: 3427840921103159316
+    second: mimic treasure transform-Sheet_6
+  - first:
+      213: 7216994302690179984
+    second: mimic treasure transform-Sheet_7
+  - first:
+      213: -7924410053620336679
+    second: mimic treasure transform-Sheet_8
+  - first:
+      213: -4669799591236345000
+    second: mimic treasure transform-Sheet_9
+  - first:
+      213: -4404088090456707459
+    second: mimic treasure transform-Sheet_10
+  - first:
+      213: 6083893357949681042
+    second: mimic treasure transform-Sheet_11
+  - first:
+      213: 2245874876863382983
+    second: mimic treasure transform-Sheet_12
+  - first:
+      213: 7189809830824745759
+    second: mimic treasure transform-Sheet_13
+  - first:
+      213: -748043949601474802
+    second: mimic treasure transform-Sheet_14
+  - first:
+      213: 4630308169764316575
+    second: mimic treasure transform-Sheet_15
+  - first:
+      213: -2836941613008275451
+    second: mimic treasure transform-Sheet_16
+  - first:
+      213: 2838610021687971387
+    second: mimic treasure transform-Sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 23
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9015807d33d6020800000000000000
+      internalID: 2336580780325669347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 14
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433ce042fb87312d0800000000000000
+      internalID: -3309168538848148684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423272411023bc940800000000000000
+      internalID: 5317398765255467812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf70a903e5cf90d0800000000000000
+      internalID: -3413792413613785124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e756edd449bb8850800000000000000
+      internalID: 6380397002532214758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed2f20993466ade0800000000000000
+      internalID: -1322259242191737370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410d6e00823229f20800000000000000
+      internalID: 3427840921103159316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09bbdddb41ae72460800000000000000
+      internalID: 7216994302690179984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7fc63aa07d60290800000000000000
+      internalID: -7924410053620336679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853e710730a813fb0800000000000000
+      internalID: -4669799591236345000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 0
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7eacc0373981e2c0800000000000000
+      internalID: -4404088090456707459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 0
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29df2f376c45e6450800000000000000
+      internalID: 6083893357949681042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c58a652d43fa2f10800000000000000
+      internalID: 2245874876863382983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b9be8a2f557c360800000000000000
+      internalID: 7189809830824745759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07bf9bbdf96e95f0800000000000000
+      internalID: -748043949601474802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95246b7fb8224040800000000000000
+      internalID: 4630308169764316575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5083e1c32a821a8d0800000000000000
+      internalID: -2836941613008275451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mimic treasure transform-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 3
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e439e66c4c46720800000000000000
+      internalID: 2838610021687971387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mimic treasure transform-Sheet_0: 2336580780325669347
+      mimic treasure transform-Sheet_1: -3309168538848148684
+      mimic treasure transform-Sheet_10: -4404088090456707459
+      mimic treasure transform-Sheet_11: 6083893357949681042
+      mimic treasure transform-Sheet_12: 2245874876863382983
+      mimic treasure transform-Sheet_13: 7189809830824745759
+      mimic treasure transform-Sheet_14: -748043949601474802
+      mimic treasure transform-Sheet_15: 4630308169764316575
+      mimic treasure transform-Sheet_16: -2836941613008275451
+      mimic treasure transform-Sheet_17: 2838610021687971387
+      mimic treasure transform-Sheet_2: 5317398765255467812
+      mimic treasure transform-Sheet_3: -3413792413613785124
+      mimic treasure transform-Sheet_4: 6380397002532214758
+      mimic treasure transform-Sheet_5: -1322259242191737370
+      mimic treasure transform-Sheet_6: 3427840921103159316
+      mimic treasure transform-Sheet_7: 7216994302690179984
+      mimic treasure transform-Sheet_8: -7924410053620336679
+      mimic treasure transform-Sheet_9: -4669799591236345000
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

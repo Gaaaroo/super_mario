@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     private void NewGame()
     {
-        Lives = 5;
+        Lives = 3;
 
         LoadLevel(1, 1);
     }
