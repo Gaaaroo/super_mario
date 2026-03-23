@@ -31,7 +31,7 @@ public class CheckpointFlag : MonoBehaviour
         if (activated)
             return;
 
-        if (!other.CompareTag("Player"))
+        if (!IsPlayerCollider(other))
             return;
 
         activated = true;
@@ -39,6 +39,18 @@ public class CheckpointFlag : MonoBehaviour
 
         Vector2 targetPosition = spawnPoint != null ? (Vector2)spawnPoint.position : (Vector2)transform.position;
         CheckpointManager.SetCheckpoint(targetPosition);
+    }
+
+    private static bool IsPlayerCollider(Collider2D other)
+    {
+        int playerLayer = LayerMask.NameToLayer("Player");
+        if (playerLayer >= 0 && other.gameObject.layer == playerLayer)
+            return true;
+
+        if (other.GetComponent<PlayerMovement>() != null || other.GetComponentInParent<PlayerMovement>() != null)
+            return true;
+
+        return other.GetComponent<Player>() != null || other.GetComponentInParent<Player>() != null;
     }
 }
 

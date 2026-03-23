@@ -131,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private new Camera camera;
     private new Rigidbody2D rigidbody;
+    private Vector2 defaultSpawnPosition;
 
     private Vector2 velocity;
     private float inputAxis;
@@ -160,6 +161,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         camera = Camera.main;
+        defaultSpawnPosition = rigidbody.position;
+
+        Vector2 spawnPosition = CheckpointManager.GetSpawnPosition(defaultSpawnPosition);
+        rigidbody.position = spawnPosition;
+        transform.position = spawnPosition;
     }
 
     private void Update()
@@ -250,10 +256,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void HitByEnemy()
     {
+        if (CheckpointManager.HasCheckpoint)
+        {
+            RespawnAt(CheckpointManager.GetSpawnPosition(defaultSpawnPosition));
+            return;
+        }
+
         if (respawnWhenHitByEnemy != null)
+        {
             RespawnAt(respawnWhenHitByEnemy.position);
-        else
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            return;
+        }
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
     public void RespawnAt(Vector2 position)

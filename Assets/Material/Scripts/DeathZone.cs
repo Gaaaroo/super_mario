@@ -9,7 +9,7 @@ public class DeathZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player"))
+        if (!IsPlayerCollider(other))
             return;
 
         if (spawnPoint != null)
@@ -21,5 +21,17 @@ public class DeathZone : MonoBehaviour
     private void ReloadCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private static bool IsPlayerCollider(Collider2D other)
+    {
+        int playerLayer = LayerMask.NameToLayer("Player");
+        if (playerLayer >= 0 && other.gameObject.layer == playerLayer)
+            return true;
+
+        if (other.GetComponent<PlayerMovement>() != null || other.GetComponentInParent<PlayerMovement>() != null)
+            return true;
+
+        return other.GetComponent<Player>() != null || other.GetComponentInParent<Player>() != null;
     }
 }
