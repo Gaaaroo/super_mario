@@ -2010,7 +2010,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpikeTrap
   spike: {fileID: 101790061}
   hideDistance: 1
+  extraFlyDistance: 0
+  shiftLeft: 0
+  shiftRight: 0
+  shiftDown: 0
   riseTime: 0.1
+  scaleUpOnTrigger: 0
+  triggeredScaleMultiplier: 3
+  scaleUpTime: 0
+  hideSpriteUntilTriggered: 0
 --- !u!61 &345525366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5897,7 +5905,7 @@ Transform:
   m_GameObject: {fileID: 1034364196}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 184.61, y: -4.504, z: 0}
+  m_LocalPosition: {x: -13.4, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7555,7 +7563,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpikeTrap
   spike: {fileID: 0}
   hideDistance: 16
+  extraFlyDistance: 0
+  shiftLeft: 0
+  shiftRight: 0
+  shiftDown: 0
   riseTime: 2
+  scaleUpOnTrigger: 0
+  triggeredScaleMultiplier: 3
+  scaleUpTime: 0
+  hideSpriteUntilTriggered: 0
 --- !u!61 &1206562350
 BoxCollider2D:
   m_ObjectHideFlags: 0
