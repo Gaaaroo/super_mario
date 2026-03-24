@@ -8193,10 +8193,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1011968245490249417, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1927495395168411946, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
       propertyPath: m_Name
       value: Mario
       objectReference: {fileID: 0}
+    - target: {fileID: 3083769988847155683, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
+      propertyPath: shootPoint
+      value: 
+      objectReference: {fileID: 280570549}
     - target: {fileID: 3386803954726795338, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8258,6 +8266,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1927495395168411946, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1686374674}
+    - targetCorrespondingSourceObject: {fileID: 1927495395168411946, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686374675}
   m_SourcePrefab: {fileID: 100100000, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
 --- !u!4 &1686374668 stripped
 Transform:
@@ -8335,7 +8346,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686374669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4df2968b64d2cb4cb9208ee3010afdb, type: 3}
   m_Name: 
@@ -8345,6 +8356,25 @@ MonoBehaviour:
   isSpreadShot: 0
   fireCooldown: 0.5
   shootSound: {fileID: 0}
+--- !u!114 &1686374675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686374669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae937af8414e074b8c7cd4aed38213f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementTran
+  jumpBufferTime: 0.12
+  coyoteTime: 0.1
+  moveSpeed: 8
+  maxJumpHeight: 5
+  maxJumpTime: 1
+  jumpSound: {fileID: 8300000, guid: 033941501343f1a4cb9f0c709f7f07f8, type: 3}
+  isInvincible: 0
 --- !u!1 &1689430802
 GameObject:
   m_ObjectHideFlags: 0
@@ -9314,8 +9344,8 @@ MonoBehaviour:
   fireballPrefab: {fileID: 3547907046414275697, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
   fireRate: 2
   player: {fileID: 0}
-  moveSpeed: 2
-  chaseDistance: 10
+  moveSpeed: 4
+  chaseDistance: 1000
   stopDistance: 4
   rageFireRate: 1
   rageMoveSpeed: 4
@@ -11013,37 +11043,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 721206397}
     m_Modifications:
-    - target: {fileID: 2497290760282944704, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3547907046414275697, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
       propertyPath: m_Name
       value: Fireball
       objectReference: {fileID: 0}
     - target: {fileID: 8333661325996064316, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8333661325996064316, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8333661325996064316, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8333661325996064316, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.12565
+      value: 10.12
       objectReference: {fileID: 0}
     - target: {fileID: 8333661325996064316, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0788312
+      value: 3.06
       objectReference: {fileID: 0}
     - target: {fileID: 8333661325996064316, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.0000000010662
       objectReference: {fileID: 0}
     - target: {fileID: 8333661325996064316, guid: 2326a260eacb6f44d91d1973a8d128b0, type: 3}
       propertyPath: m_LocalRotation.w
