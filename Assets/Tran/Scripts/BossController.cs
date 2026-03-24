@@ -20,7 +20,7 @@ public class BossController : MonoBehaviour
     public Transform player;
 
     public float moveSpeed = 2f;
-    public float chaseDistance = 200f;
+    public float chaseDistance = 1000f;
     public float stopDistance = 4f;
 
     [Header("Rage Mode")]

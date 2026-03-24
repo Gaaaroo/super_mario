@@ -17,7 +17,7 @@ public class Fireball : MonoBehaviour
         if (hitInfo.CompareTag("Player"))
         {
             // Tìm script di chuyển của Mario
-            PlayerMovement mario = hitInfo.GetComponent<PlayerMovement>();
+            PlayerMovementTran mario = hitInfo.GetComponentInParent<PlayerMovementTran>();
 
             // Nếu tìm thấy, gọi hàm xử lý trúng đòn mà ta vừa viết
             if (mario != null)
