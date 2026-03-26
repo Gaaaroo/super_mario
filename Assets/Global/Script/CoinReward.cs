@@ -11,7 +11,13 @@ public class CoinReward : MonoBehaviour
     {
         // 1. Cộng tiền
         GameData.coins++;
-        if (UIManager.Instance != null) UIManager.Instance.UpdateUI();
+        if (UIManager.Instance != null)
+        {
+         
+            UIManager.Instance.UpdateUI();
+
+            UIManager.Instance.PlayCoinSound();
+        }
 
         // 2. Chạy hoạt ảnh vật lý
         StartCoroutine(AnimatePhysics());
