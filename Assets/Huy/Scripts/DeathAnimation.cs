@@ -126,7 +126,23 @@ public class DeathAnimation : MonoBehaviour
     public SpriteRenderer SpriteRenderer;
     public Sprite DeadSprite;
 
+    [Header("Cung bay khi chết (giống DeathAnimationCustom)")]
+    [SerializeField] private float deathArcDuration = 3f;
+    [SerializeField] private float jumpVelocity = 10f;
+    [SerializeField] private float gravity = -36f;
+
+    [Header("Tùy chọn Animator")]
+    [Tooltip("Nếu có, gọi SetTrigger khi bắt đầu chết (sprite vẫn có thể dùng DeadSprite).")]
+    [SerializeField] private Animator deathAnimator;
+    [SerializeField] private string deathAnimatorTrigger = "";
+
     private bool isAlreadyDead = false; // CHỐT AN TOÀN
+
+    private void Reset()
+    {
+        if (SpriteRenderer == null)
+            SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+    }
 
     private void OnEnable()
     {
@@ -137,7 +153,17 @@ public class DeathAnimation : MonoBehaviour
         HandleLifeAndUI();
         UpdateSprite();
         DisablePhysics();
+        // PlayerSpriteRender.OnDisable() sets spriteRenderer.enabled = false — show dead sprite again.
+        UpdateSprite();
+        PlayDeathAnimatorIfAny();
         StartCoroutine(Animate());
+    }
+
+    private void PlayDeathAnimatorIfAny()
+    {
+        if (deathAnimator == null) return;
+        if (string.IsNullOrEmpty(deathAnimatorTrigger)) return;
+        deathAnimator.SetTrigger(deathAnimatorTrigger);
     }
 
     private void HandleLifeAndUI()
@@ -166,47 +192,55 @@ public class DeathAnimation : MonoBehaviour
 
     private void DisablePhysics()
     {
-        // 1. Tắt va chạm
         Collider2D[] colliders = GetComponentsInChildren<Collider2D>();
         foreach (Collider2D col in colliders) col.enabled = false;
 
-        // 2. KHÓA CỨNG Rigidbody
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.linearVelocity = Vector2.zero; // Ép vận tốc về 0
-            rb.simulated = false;             // TẮT MÔ PHỎNG VẬT LÝ LUÔN (Bí kíp nè!)
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.bodyType = RigidbodyType2D.Kinematic;
         }
 
-        // 3. Tắt script di chuyển
         PlayerMovement pm = GetComponent<PlayerMovement>();
         if (pm != null) pm.enabled = false;
 
-        // Tránh PlayerSpriteRender / AnimatedSprite (con Small/Big) ghi đè sprite chết mỗi LateUpdate
+        PlayerMovementTran pmt = GetComponent<PlayerMovementTran>();
+        if (pmt != null) pmt.enabled = false;
+
+        MarioMovement marioMovement = GetComponent<MarioMovement>();
+        if (marioMovement != null) marioMovement.enabled = false;
+
+        EntityMovement entityMovement = GetComponent<EntityMovement>();
+        if (entityMovement != null) entityMovement.enabled = false;
+
         foreach (PlayerSpriteRender psr in GetComponentsInChildren<PlayerSpriteRender>(true))
             psr.enabled = false;
-        foreach (PlayerSpriteRenderCustom psrc in GetComponentsInChildren<PlayerSpriteRenderCustom>(true))
-            psrc.enabled = false;
         foreach (AnimatedSprite anim in GetComponentsInChildren<AnimatedSprite>(true))
             anim.enabled = false;
     }
 
     private IEnumerator Animate()
     {
-        // Lưu vị trí CHÍNH XÁC lúc vừa chạm gai
-        Vector3 fixedPos = transform.position;
-        float duration = 2.5f;
         float elapsed = 0f;
+        float duration = Mathf.Max(0.1f, deathArcDuration);
+        Vector3 velocity = Vector3.up * jumpVelocity;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
 
         while (elapsed < duration)
         {
-            // Ép chết ở vị trí này, không cho nhúc nhích 1 pixel nào
-            transform.position = fixedPos;
-            elapsed += Time.deltaTime;
-            yield return null;
+            yield return new WaitForFixedUpdate();
+            float dt = Time.fixedDeltaTime;
+            Vector2 delta = (Vector2)(velocity * dt);
+            if (rb != null)
+                rb.MovePosition(rb.position + delta);
+            else
+                transform.position += (Vector3)delta;
+            velocity.y += gravity * dt;
+            elapsed += dt;
         }
 
-        // Reset lại biến chết để lần sau load scene vẫn dùng được
         isAlreadyDead = false;
         ReloadLevel();
     }

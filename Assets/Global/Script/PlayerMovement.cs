@@ -356,6 +356,13 @@ public class PlayerMovement : MonoBehaviour
 
         // Tìm script DeathAnimation của Huy trên người Mario và BẬT nó lên
         // Khi bật lên, hàm OnEnable trong đó sẽ lo hết việc trừ mạng và reset tiền
+        DeathAnimationCustom deathAnimationCustom = GetComponent<DeathAnimationCustom>();
+        if (deathAnimationCustom != null)
+        {
+            deathAnimationCustom.enabled = true;
+            return;
+        }
+
         DeathAnimation deathAnimation = GetComponent<DeathAnimation>();
         if (deathAnimation != null)
         {

@@ -1367,9 +1367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814b128606cd32e42bb951194694fdb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::D
-  useBandMinMax: 0
-  bandMinX: 0
-  bandMaxX: 0
 --- !u!1 &418449887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,7 +2527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SharedLevelExit
   nextSceneName: Boss-1
   useSceneIndex: 1
-  nextSceneIndex: 4
+  nextSceneIndex: 3
 --- !u!1 &837555765
 GameObject:
   m_ObjectHideFlags: 0

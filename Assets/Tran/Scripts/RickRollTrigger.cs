@@ -6,6 +6,9 @@ public class RickRollTrigger : MonoBehaviour
     public GameObject videoScreen;
     public VideoPlayer videoPlayer;
 
+    [Tooltip("Nút \"reward\" — ẩn khi video chạy, hiện lại khi tắt video.")]
+    public GameObject rewardButton;
+
     void Start()
     {
         if (videoPlayer != null)
@@ -24,6 +27,7 @@ public class RickRollTrigger : MonoBehaviour
 
     public void BatVideoLen()
     {
+        if (rewardButton != null) rewardButton.SetActive(false);
         if (videoScreen != null) videoScreen.SetActive(true);
         if (videoPlayer != null) videoPlayer.Play();
     }
@@ -33,5 +37,6 @@ public class RickRollTrigger : MonoBehaviour
         if (videoPlayer != null) videoPlayer.Stop();
 
         if (videoScreen != null) videoScreen.SetActive(false);
+        if (rewardButton != null) rewardButton.SetActive(true);
     }
 }

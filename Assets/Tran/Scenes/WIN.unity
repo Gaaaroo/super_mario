@@ -242,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RickRollTrigger
   videoScreen: {fileID: 1748228854}
   videoPlayer: {fileID: 1748228855}
+  rewardButton: {fileID: 1132335711}
 --- !u!4 &613771820
 Transform:
   m_ObjectHideFlags: 0

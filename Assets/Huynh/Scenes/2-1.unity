@@ -29754,9 +29754,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f264e248a7392469a55206a9625441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SharedLevelExit
-  nextSceneName: 3-1
+  nextSceneName: Boss-1
   useSceneIndex: 1
-  nextSceneIndex: 3
+  nextSceneIndex: 4
 --- !u!114 &1413861286
 MonoBehaviour:
   m_ObjectHideFlags: 0
