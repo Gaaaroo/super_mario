@@ -253,7 +253,7 @@ MonoBehaviour:
   combatDelay: 1
   wakeUpSound: {fileID: 8300000, guid: de0d4a033c4df8341b487a68fee31201, type: 3}
   walkSound: {fileID: 8300000, guid: efa0247bfc5f70c4195f44b3819660d5, type: 3}
-  dieSound: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: 4b1476c08a0e3a14cb9b7738bc566072, type: 3}
 --- !u!82 &3420643335901305662
 AudioSource:
   m_ObjectHideFlags: 0

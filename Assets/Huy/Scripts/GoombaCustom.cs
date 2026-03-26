@@ -4,12 +4,20 @@ public class GoombaCustom : MonoBehaviour
 {
     public Sprite FlatSprite;
 
+    private AudioSource audioSource;
+    public AudioClip dieSound;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Check if the collision is with the player and if the player is above the goomba
         if (collision.gameObject.CompareTag("Player"))
         {
-            Player player = collision.gameObject.GetComponent<Player>();
+            PlayerCustom player = collision.gameObject.GetComponent<PlayerCustom>();
 
             if (collision.transform.DotTest(transform, Vector2.down))
                 Flatten();
@@ -39,6 +47,14 @@ public class GoombaCustom : MonoBehaviour
 
         GetComponent<SpriteRenderer>().sprite = FlatSprite;
 
-        Destroy(gameObject, 0.5f);
+        PlaySound(dieSound);
+
+        Destroy(gameObject, 1f);
+    }
+
+    void PlaySound(AudioClip clip)
+    {
+        if (clip == null) return;
+        audioSource.PlayOneShot(clip);
     }
 }
