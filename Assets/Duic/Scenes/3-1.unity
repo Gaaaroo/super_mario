@@ -142,11 +142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.83
+      value: -12.25
       objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 6550854758003525230, guid: e09453776b505044d82fedcc72e8fcb1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2528,9 +2528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f264e248a7392469a55206a9625441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SharedLevelExit
-  nextSceneName: 1-2
+  nextSceneName: Boss-1
   useSceneIndex: 1
-  nextSceneIndex: 1
+  nextSceneIndex: 4
 --- !u!1 &837555765
 GameObject:
   m_ObjectHideFlags: 0

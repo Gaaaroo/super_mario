@@ -9,6 +9,8 @@ public class LifeManager : MonoBehaviour
 {
     public TextMeshProUGUI livesText;
 
+    private static bool s_warnedMissingLivesText;
+
     private void OnEnable()
     {
         BindTextIfNeeded();
@@ -29,8 +31,12 @@ public class LifeManager : MonoBehaviour
         GameObject textObject = GameObject.Find("LivesText");
         if (textObject != null)
             livesText = textObject.GetComponent<TextMeshProUGUI>();
-        else
-            Debug.LogWarning("LifeManager: Không tìm thấy GameObject tên 'LivesText'.");
+        else if (UIManager.Instance == null && !s_warnedMissingLivesText)
+        {
+            // Có UIManager thì mạng đã hiện bằng tim (UI Toolkit); chữ TMP "LivesText" là tùy chọn → không cảnh báo.
+            s_warnedMissingLivesText = true;
+            Debug.LogWarning("LifeManager: Không tìm thấy GameObject tên 'LivesText'. Gán trường livesText trên LifeManager hoặc thêm TMP đặt tên đúng.");
+        }
     }
 
     public void RefreshLivesText()

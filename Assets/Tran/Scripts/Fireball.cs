@@ -14,19 +14,20 @@ public class Fireball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.CompareTag("Player"))
+        if (!hitInfo.CompareTag("Player"))
+            return;
+
+        // Prefab Mario có thể dùng PlayerMovementTran (một số scene) hoặc PlayerMovement (prefab mặc định).
+        PlayerMovementTran tran = hitInfo.GetComponentInParent<PlayerMovementTran>();
+        if (tran != null)
+            tran.DieFromCrushOrHazard();
+        else
         {
-            // Tìm script di chuyển của Mario
-            PlayerMovementTran mario = hitInfo.GetComponentInParent<PlayerMovementTran>();
-
-            // Nếu tìm thấy, gọi hàm xử lý trúng đòn mà ta vừa viết
-            if (mario != null)
-            {
-                mario.DieFromCrushOrHazard();
-            }
-
-            // Viên đạn tự nổ
-            Destroy(gameObject);
+            PlayerMovement movement = hitInfo.GetComponentInParent<PlayerMovement>();
+            if (movement != null)
+                movement.DieFromCrushOrHazard();
         }
+
+        Destroy(gameObject);
     }
 }

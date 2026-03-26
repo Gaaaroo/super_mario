@@ -16,8 +16,21 @@ public class SideScrolling : MonoBehaviour
     [Tooltip("Cận phải vùng camera hai chiều (mặc định 0). Chỉ có hiệu lực khi Use Band Min Max được bật.")]
     [SerializeField] private float bandMaxX;
 
+    [Header("Boss / arena cố định")]
+    [Tooltip("Bật: không theo player, giữ đúng vị trí camera đặt trong scene (chỉnh X/Y trong Inspector).")]
+    [SerializeField] private bool lockToFixedPosition;
+
+    [Tooltip("Đặt > 0 để zoom (orthographic size) khi vào scene — ví dụ boss room rộng hơn. 0 = giữ nguyên Camera.")]
+    [SerializeField] private float orthographicSizeOverride;
+
+    private Camera _camera;
+
     private void Awake()
     {
+        _camera = GetComponent<Camera>();
+        if (_camera != null && orthographicSizeOverride > 0f)
+            _camera.orthographicSize = orthographicSizeOverride;
+
         GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
             player = playerObj.transform;
@@ -25,6 +38,7 @@ public class SideScrolling : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (lockToFixedPosition) return;
         if (player == null) return;
 
         Vector3 cameraPosition = transform.position;

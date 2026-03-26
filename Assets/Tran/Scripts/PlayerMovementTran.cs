@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -26,8 +26,6 @@ public class PlayerMovementTran : MonoBehaviour // Đổi tên class để khôn
     public AudioClip jumpSound;
     private AudioSource audioSource;
 
-    [Header("Bất Tử (Custom)")]
-    public bool isInvincible = false;
     private SpriteRenderer spriteRenderer;
 
     public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
@@ -159,15 +157,12 @@ public class PlayerMovementTran : MonoBehaviour // Đổi tên class để khôn
     // --- HÀM XỬ LÝ TRÚNG ĐÒN (CUSTOM CỦA BẠN) ---
     public void HitByEnemy()
     {
-        // 1. Đang tàng hình thì né đòn
-        if (isInvincible) return;
-
-        // 2. Trừ mạng theo hệ thống chung của team
+        // Trừ mạng theo hệ thống chung của team
         GameData.lives--;
         GameData.coins = GameData.coinsAtLevelStart;
         LifeManager.RefreshAllLifeUI();
 
-        // 3. Nếu HẾT MẠNG -> Game Over, reset về màn đầu
+        // Nếu HẾT MẠNG -> Game Over, reset về màn đầu
         if (GameData.lives <= 0)
         {
             GameData.lives = 5;
@@ -179,16 +174,14 @@ public class PlayerMovementTran : MonoBehaviour // Đổi tên class để khôn
             return;
         }
 
-        // 4. Nếu VẪN CÒN MẠNG -> Không load lại màn, cho tàng hình 5 giây chạy tiếp!
-        StartCoroutine(FlashAndInvincible());
+        // Vẫn còn mạng: nhấp nháy (chỉ hiệu ứng, không bất tử)
+        StartCoroutine(FlashAfterHit());
     }
 
-    // Hiệu ứng nhấp nháy 5 giây
-    private System.Collections.IEnumerator FlashAndInvincible()
+    private System.Collections.IEnumerator FlashAfterHit()
     {
-        isInvincible = true;
         float blinkInterval = 0.1f;
-        float duration = 5f; // Tàng hình 5 giây theo ý bạn
+        float duration = 5f;
 
         for (float t = 0; t < duration; t += blinkInterval)
         {
@@ -197,7 +190,6 @@ public class PlayerMovementTran : MonoBehaviour // Đổi tên class để khôn
         }
 
         spriteRenderer.enabled = true;
-        isInvincible = false;
     }
 
     public void DieFromCrushOrHazard() => HitByEnemy();
