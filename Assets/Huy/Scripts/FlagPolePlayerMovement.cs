@@ -26,13 +26,23 @@ public class FlagPolePlayerMovement : MonoBehaviour
             // MusicManager.Instance.SetMusic(false);
             PlaySound(winSound);
 
-            FindAnyObjectByType<LevelLoader>().LoadNextLevel();
+            NextLevel(8f);
         }
+    }
+
+    public void NextLevel(float delay)
+    {
+        Invoke(nameof(NextLevel), delay);
+    }
+
+    private void NextLevel()
+    {
+        FindAnyObjectByType<LevelLoader>().LoadNextLevel();
     }
 
     private IEnumerator LevelCompleteSequence(Transform player)
     {
-        player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<MarioMovement>().enabled = false;
 
         yield return MoveTo(player, poleBottom.position);
         yield return MoveTo(player, player.position + Vector3.right);

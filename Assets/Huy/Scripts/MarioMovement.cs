@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class MarioMovement : MonoBehaviour
 {
     private Camera mainCamera;
@@ -22,11 +21,15 @@ public class MarioMovement : MonoBehaviour
     public bool sliding => (inputAxis > 0f && velocity.x < 0f) || (inputAxis < 0f && velocity.x > 0f);
     public bool falling => velocity.y < 0f && !grounded;
 
+    private AudioSource audioSource;
+    public AudioClip jumpSound;
+
     private void Awake()
     {
         mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<Collider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -107,6 +110,8 @@ public class MarioMovement : MonoBehaviour
         {
             velocity.y = jumpForce;
             jumping = true;
+
+            PlaySound(jumpSound);
         }
     }
 
@@ -142,4 +147,9 @@ public class MarioMovement : MonoBehaviour
         }
     }
 
+    void PlaySound(AudioClip clip)
+    {
+        if (clip == null) return;
+        audioSource.PlayOneShot(clip);
+    }
 }

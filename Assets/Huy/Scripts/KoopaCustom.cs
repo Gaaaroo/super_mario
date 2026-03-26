@@ -8,6 +8,14 @@ public class KoopaCustom : MonoBehaviour
     private bool _shelled;
     private bool _pushed;
 
+    private AudioSource audioSource;
+    public AudioClip dieSound;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Check if the collision is with the player and if the player is above the goomba
@@ -33,7 +41,7 @@ public class KoopaCustom : MonoBehaviour
             }
             else
             {
-                Player player = other.GetComponent<Player>();
+                PlayerCustom player = other.GetComponent<PlayerCustom>();
                 player.Hit();
             }
         }
@@ -63,12 +71,21 @@ public class KoopaCustom : MonoBehaviour
         GetComponent<AnimatedSprite>().enabled = false;
 
         GetComponent<SpriteRenderer>().sprite = ShellSprite;
+
+        PlaySound(dieSound);
     }
 
     private void Hit()
     {
         GetComponent<AnimatedSprite>().enabled = false;
         GetComponent<DeathAnimationCustom>().enabled = true;
+
         Destroy(gameObject, 3f);
+    }
+
+    void PlaySound(AudioClip clip)
+    {
+        if (clip == null) return;
+        audioSource.PlayOneShot(clip);
     }
 }
