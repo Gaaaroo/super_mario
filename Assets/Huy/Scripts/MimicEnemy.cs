@@ -145,7 +145,7 @@ public class MimicEnemy : MonoBehaviour
         if (!collision.gameObject.CompareTag("Player"))
             return;
 
-        Player playerScript = collision.gameObject.GetComponent<Player>();
+        PlayerCustom playerScript = collision.gameObject.GetComponent<PlayerCustom>();
 
         // Mario đè từ trên xuống
         if (collision.transform.DotTest(transform, Vector2.down))
